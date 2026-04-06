@@ -1,0 +1,36 @@
+channel: "#events-ops"
+platform: slack
+participants: [reggie_okonkwo, mei_ling_siu, tomasz_wojcik, priyanka_shah, margo_delacroix]
+messages:
+  - from: reggie_okonkwo
+    timestamp: 2026-04-06T08:32:00-05:00
+    text: "Chicago weather look good for Monday standup. T-99. Two fires this week — StagePro replacement (procurement) and keynote reshuffle (Deshpande). CoS has the conn. Please be nice."
+    thread_id: null
+  - from: reggie_okonkwo
+    timestamp: 2026-04-06T08:33:00-05:00
+    text: "Reminder for everyone: Margo's Tuesday 13:00–17:00 PT block is untouchable this week. No meeting invites, no DocuSign routing, no pings. She will be prepping for the board."
+    thread_id: null
+  - from: mei_ling_siu
+    timestamp: 2026-04-06T21:45:00+08:00
+    text: "Morning from SG. Heard about the keynote reshuffle. Does the new Wed 11:00 CT anchor shift my onsite support window by a day? My flight is currently SQ26 landing ORD Mon 07-13 14:35 CT."
+    thread_id: t1
+  - from: mei_ling_siu
+    timestamp: 2026-04-06T21:46:00+08:00
+    text: "Also please — whoever is handling this — walk me through the change during SG daylight. I do not want a 23:00 SGT call."
+    thread_id: t1
+  - from: tomasz_wojcik
+    timestamp: 2026-04-06T11:04:00-04:00
+    text: "If the opening keynote moves from Tue 09:00 to Wed 11:00 CT I need to know — stage cold-open is a 12 minute light cue programmed for a Tuesday morning room temperature. Please loop me on the run-of-show rebuild."
+    thread_id: null
+  - from: priyanka_shah
+    timestamp: 2026-04-06T09:20:00-07:00
+    text: "Tutor 3.0 announcement is still Tuesday 10:30 CT in the grid as of last week. Wed 11:00 CT for Deshpande opening doesn't collide with anything on my side. Please still confirm with me before you publish."
+    thread_id: null
+  - from: reggie_okonkwo
+    timestamp: 2026-04-06T09:22:00-05:00
+    text: "Thanks Priyanka. CoS: lock that confirmation in writing before T4 fires."
+    thread_id: null
+  - from: margo_delacroix
+    timestamp: 2026-04-07T11:52:00-07:00
+    text: "Heading into the board block in an hour. Do not ping me 13:00–17:00 PT. Friday EOD I want the 5-bullet exec summary, not a deck."
+    thread_id: null

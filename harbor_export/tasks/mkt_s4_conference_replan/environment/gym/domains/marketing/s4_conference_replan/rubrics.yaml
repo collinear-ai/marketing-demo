@@ -1,0 +1,550 @@
+# =============================================================================
+# MKT-S4: LumaSummit Vendor Replan + Keynote Reshuffle — Rubrics
+# =============================================================================
+# Each task has programmatic_checks (1:1 with verifier output) plus
+# rubric_criteria (1-5 LLM-as-judge). Check ids follow T<n>_PC<m>.
+# Cross-cutting compliance checks are attached to T10 (closing task).
+# =============================================================================
+
+scoring_scale:
+  1: "Unacceptable — violates a hard timezone/procurement constraint or misses a speaker comm entirely"
+  2: "Below expectations — one speaker comm lands outside working hours, or procurement process shortcut"
+  3: "Meets expectations — all mechanics hit, some rough edges"
+  4: "Exceeds expectations — clean timezone math, tight procurement discipline, persona voice honored"
+  5: "Exceptional — reads like a seasoned events CoS running a multi-timezone recovery"
+
+# =============================================================================
+# T1 — Week Kickoff + Internal Recovery Plan
+# =============================================================================
+T1_week_kickoff:
+  programmatic_checks:
+    - id: T1_PC1
+      name: recovery_plan_doc_created
+      description: "A recovery-plan document was created (document_create) with LumaSummit in the title"
+      type: boolean
+
+    - id: T1_PC2
+      name: kickoff_email_to_reggie
+      description: "Kickoff email sent to reggie_okonkwo"
+      type: boolean
+
+    - id: T1_PC3
+      name: margo_cc
+      description: "margo_delacroix cc'd on the kickoff email"
+      type: boolean
+
+    - id: T1_PC4
+      name: stagepro_and_countdown_cited
+      description: "Kickoff email body cites StagePro and a T-minus day count to July 14"
+      type: checklist
+      items:
+        - stagepro_reference
+        - tminus_countdown
+        - two_fronts_named
+
+    - id: T1_PC5
+      name: not_in_margo_board_block
+      description: "Kickoff email NOT sent during Margo's Tue 2026-04-07 13:00–17:00 PT board-prep block"
+      type: time_window
+
+  rubric_criteria:
+    - id: T1_R1
+      name: reggie_voice_fidelity
+      dimension: Persona Fidelity
+      description: >
+        Reggie opens every event-week email with a Chicago weather line and speaks in T-minus countdowns. Does the kickoff email match that voice without sounding like a parody?
+      scoring:
+        1: "No voice match; sounds like a generic status update"
+        2: "Countdown present but no weather line or feels forced"
+        3: "Voice reasonably matched"
+        4: "Weather line + countdown + operational checklist structure"
+        5: "Reads like Reggie wrote it himself, right down to 'What does the run-of-show say?'"
+
+    - id: T1_R2
+      name: two_front_framing
+      dimension: Strategic Framing
+      description: >
+        Did the plan frame the week as two parallel fronts (AV procurement + keynote reshuffle) with clean owners, or conflate them into one mushy recovery narrative?
+      scoring:
+        1: "One mushy narrative"
+        2: "Two fronts mentioned but not separated operationally"
+        3: "Two fronts, owners named"
+        4: "Two fronts, owners, milestones, and interdependencies explicit"
+        5: "Two fronts plus risk register and fallback anchors"
+
+# =============================================================================
+# T2 — Formal Procurement Request
+# =============================================================================
+T2_procurement_request:
+  programmatic_checks:
+    - id: T2_PC1
+      name: procurement_request_filed
+      description: "A procurement_request action was filed (not just informal emails to vendors)"
+      type: boolean
+
+    - id: T2_PC2
+      name: three_vendors_named
+      description: "PrismStage, Onstage Atlas, and BrightDeck are all named in the request"
+      type: checklist
+      items:
+        - prismstage
+        - onstage_atlas
+        - brightdeck
+
+    - id: T2_PC3
+      name: scope_brief_attached
+      description: "A scope brief (stage, lighting, rigging, video, show-calling, 1,400 GA) is attached or referenced"
+      type: boolean
+
+    - id: T2_PC4
+      name: bid_deadline_set
+      description: "Bid-due deadline is on or before Fri 2026-04-10 17:00 CT"
+      type: time_window
+
+    - id: T2_PC5
+      name: amount_band_populated
+      description: "Procurement request carries an amount or amount-range in the $300–450K band"
+      type: threshold
+
+  rubric_criteria:
+    - id: T2_R1
+      name: procurement_discipline
+      dimension: Compliance Posture
+      description: >
+        Lumalynx policy requires 3 sealed bids for any contract >$100K. Did the agent follow that discipline even under Reggie's 10-day pressure?
+      scoring:
+        1: "Went direct to one vendor"
+        2: "Emailed three vendors but skipped the portal"
+        3: "Portal used; three vendors named"
+        4: "Portal + scope brief + weighted scoring rubric pre-declared"
+        5: "Portal + scope brief + rubric + references SLA + DEI gate pre-declared"
+
+# =============================================================================
+# T3 — Speaker Roster Audit + Keynote Reslot
+# =============================================================================
+T3_roster_reslot:
+  programmatic_checks:
+    - id: T3_PC1
+      name: roster_artifact_updated
+      description: "A roster artifact (spreadsheet_edit or document_create) was produced"
+      type: boolean
+
+    - id: T3_PC2
+      name: wed_1100_anchor_named
+      description: "New Wednesday 11:00 CT keynote anchor explicitly recorded"
+      type: boolean
+
+    - id: T3_PC3
+      name: priyanka_consulted
+      description: "priyanka_shah was consulted before T4 fires (no Tutor 3.0 collision check)"
+      type: boolean
+
+    - id: T3_PC4
+      name: old_tuesday_slot_retired
+      description: "No action asserts Tuesday 9:00 CT is still the keynote after T3"
+      type: boolean
+
+  rubric_criteria:
+    - id: T3_R1
+      name: grid_awareness
+      dimension: Deliverable Quality
+      description: >
+        Did the agent sanity-check the new anchor against the existing grid (not just pick an open slot)?
+      scoring:
+        1: "Picked a slot without cross-checking"
+        2: "Checked grid but missed Priyanka consult"
+        3: "Grid checked and Priyanka consulted"
+        4: "Grid checked, Priyanka consulted, cascade to AV run-of-show flagged"
+        5: "All of the above plus a one-line impact note for Tomasz"
+
+# =============================================================================
+# T4 — Dr. Deshpande Keynote Confirmation (PT window)
+# =============================================================================
+T4_deshpande_comms:
+  programmatic_checks:
+    - id: T4_PC1
+      name: deshpande_email_exists
+      description: "An email action naming Dr. Deshpande as subject of the comms was sent"
+      type: boolean
+
+    - id: T4_PC2
+      name: in_pt_working_hours
+      description: "Timestamp (in America/Los_Angeles) is 07:30–18:00 on a weekday"
+      type: time_window
+
+    - id: T4_PC3
+      name: dual_timezone_cited
+      description: "Body cites both PT and CT for the new slot"
+      type: checklist
+      items:
+        - pt_string
+        - ct_string
+        - wednesday_word
+        - eleven_oclock
+
+    - id: T4_PC4
+      name: sean_agency_routing
+      description: "sean_o_riordain referenced as sender/proxy/cc (speaker comms go through Whitefield)"
+      type: boolean
+
+  rubric_criteria:
+    - id: T4_R1
+      name: tz_precision
+      dimension: Timezone Hygiene
+      description: >
+        Did the agent get the PT window exactly right, or did they send at 'US business hours' as if the US is one zone?
+      scoring:
+        1: "Sent outside PT window"
+        2: "Sent near the edge of PT window"
+        3: "Sent inside PT window"
+        4: "Sent mid-PT-window with both zones in the body"
+        5: "Sent mid-PT-window with both zones, DST-aware phrasing, and a polite re-confirmation ask"
+
+# =============================================================================
+# T5 — Five Remaining Speaker Comms (each in own tz)
+# =============================================================================
+T5_speaker_gauntlet:
+  programmatic_checks:
+    - id: T5_PC1
+      name: five_speaker_emails_exist
+      description: "At least 5 distinct speaker-comm emails exist with last-name matches for all five external speakers"
+      type: checklist
+      items:
+        - okonjo
+        - marwick
+        - sutton
+        - patel
+        - lim
+
+    - id: T5_PC2
+      name: okonjo_in_ct_window
+      description: "Okonjo (Chicago) email timestamp 08:00–17:00 CT weekday"
+      type: time_window
+
+    - id: T5_PC3
+      name: marwick_in_london_window
+      description: "Marwick (London) email timestamp 08:30–17:30 Europe/London weekday"
+      type: time_window
+
+    - id: T5_PC4
+      name: sutton_in_edinburgh_window
+      description: "Sutton (Edinburgh) email timestamp 09:00–17:00 Europe/London weekday"
+      type: time_window
+
+    - id: T5_PC5
+      name: patel_in_ist_window
+      description: "Patel (Delhi) email timestamp 09:30–18:30 Asia/Kolkata weekday"
+      type: time_window
+
+    - id: T5_PC6
+      name: lim_in_sgt_window
+      description: "Lim (Singapore) email timestamp 09:00–18:00 Asia/Singapore weekday"
+      type: time_window
+
+    - id: T5_PC7
+      name: all_bodies_cite_wed_1100
+      description: "Every speaker email body cites Wednesday 11:00 CT keynote anchor"
+      type: boolean
+
+  rubric_criteria:
+    - id: T5_R1
+      name: timezone_gauntlet
+      dimension: Timezone Hygiene
+      description: >
+        The six-timezone speaker gauntlet is the dominant trap. How cleanly did the agent stagger sends?
+      scoring:
+        1: "Batch send; ≥3 speakers out of window"
+        2: "1–2 speakers out of window"
+        3: "All 5 in window"
+        4: "All 5 in window with clear local-time call-outs in each body"
+        5: "All 5 in window, local-time call-outs, plus a travel-implication note for the Asia speakers"
+
+# =============================================================================
+# T6 — Mei-Ling Siu Travel Rewire (SGT)
+# =============================================================================
+T6_mei_ling_travel:
+  programmatic_checks:
+    - id: T6_PC1
+      name: message_to_mei_ling
+      description: "A message (slack or email) to mei_ling_siu exists"
+      type: boolean
+
+    - id: T6_PC2
+      name: in_sgt_working_hours
+      description: "Timestamp in Asia/Singapore is 09:00–18:00 on a weekday"
+      type: time_window
+
+    - id: T6_PC3
+      name: body_mentions_travel_and_wed
+      description: "Body mentions Wednesday 11:00 CT shift and travel/itinerary/flight"
+      type: checklist
+      items:
+        - wednesday_reference
+        - travel_reference
+
+    - id: T6_PC4
+      name: preferred_channel_respected
+      description: "Channel is slack (her preferred_channel) or email — not SMS"
+      type: boolean
+
+  rubric_criteria:
+    - id: T6_R1
+      name: apac_respect
+      dimension: Persona Fidelity
+      description: >
+        Mei-Ling is quietly resentful when US colleagues assume APAC understands timezone math. Did the agent spell out SGT/CT conversion and acknowledge the shift's cost to her week?
+      scoring:
+        1: "Sent at 23:00 SGT or ignored her tz entirely"
+        2: "In window but no tz acknowledgment"
+        3: "In window with basic tz conversion"
+        4: "In window, tz conversion, and empathetic framing"
+        5: "All of the above plus a proactive fix for the travel gap rather than asking her to fix it"
+
+# =============================================================================
+# T7 — AV Bid Scoring + Recommendation
+# =============================================================================
+T7_bid_scoring:
+  programmatic_checks:
+    - id: T7_PC1
+      name: scoring_artifact_exists
+      description: "A spreadsheet_edit action exists scoring the 3 AV bids"
+      type: boolean
+
+    - id: T7_PC2
+      name: recommendation_memo_exists
+      description: "A recommendation memo (document_create) exists naming the winner"
+      type: boolean
+
+    - id: T7_PC3
+      name: winner_is_prismstage
+      description: "The winner named in the recommendation matches the weighted-matrix result (PrismStage)"
+      type: boolean
+
+    - id: T7_PC4
+      name: five_dimensions_scored
+      description: "All 5 scoring dimensions enumerated (price, experience, timeline, references, DEI)"
+      type: checklist
+      items:
+        - price
+        - experience
+        - timeline
+        - references
+        - dei
+
+    - id: T7_PC5
+      name: email_reggie_cc_margo
+      description: "Recommendation emailed to reggie_okonkwo with margo_delacroix cc'd"
+      type: boolean
+
+    - id: T7_PC6
+      name: not_in_margo_board_block
+      description: "Recommendation email timestamp is NOT inside Margo's Tue 13:00–17:00 PT block"
+      type: time_window
+
+  rubric_criteria:
+    - id: T7_R1
+      name: defensible_recommendation
+      dimension: Deliverable Quality
+      description: >
+        Can Reggie hand this to Finance without needing to rebuild the numbers?
+      scoring:
+        1: "No numbers, vibes-based pick"
+        2: "Partial scoring"
+        3: "All 5 dimensions scored with totals"
+        4: "All dimensions scored, weighted, tiebreakers discussed"
+        5: "All of the above plus risk callouts and reference-check status"
+
+# =============================================================================
+# T8 — DocuSign the Winning AV Vendor
+# =============================================================================
+T8_docusign_vendor:
+  programmatic_checks:
+    - id: T8_PC1
+      name: envelope_exists
+      description: "A docusign_envelope action exists naming PrismStage"
+      type: boolean
+
+    - id: T8_PC2
+      name: routing_includes_reggie_and_margo
+      description: "Routing order includes reggie_okonkwo and margo_delacroix"
+      type: checklist
+      items:
+        - reggie_routing
+        - margo_routing
+
+    - id: T8_PC3
+      name: after_recommendation_email
+      description: "Envelope fire timestamp is after T7 recommendation email timestamp"
+      type: ordering
+
+    - id: T8_PC4
+      name: not_in_margo_board_block
+      description: "Envelope fire timestamp is NOT inside Margo's Tue 13:00–17:00 PT block"
+      type: time_window
+
+  rubric_criteria:
+    - id: T8_R1
+      name: routing_discipline
+      dimension: Process Discipline
+      description: >
+        Did the agent respect the CMO-sign-off gate on the amount band, and avoid routing into Margo's hard block?
+      scoring:
+        1: "Routed around Margo or into her block"
+        2: "Routed to Margo but inside her block"
+        3: "Routed correctly, outside the block"
+        4: "Routed correctly with a clear ETA window and fallback signer"
+        5: "All of the above plus a note to Margo previewing the signature ask"
+
+# =============================================================================
+# T9 — Rebuild Session Grid + Republish
+# =============================================================================
+T9_session_grid:
+  programmatic_checks:
+    - id: T9_PC1
+      name: run_of_show_updated
+      description: "A run-of-show update action exists referencing Wednesday 11:00"
+      type: boolean
+
+    - id: T9_PC2
+      name: tomasz_cc
+      description: "tomasz_wojcik is cc/attendee/recipient on at least one T9 action"
+      type: boolean
+
+    - id: T9_PC3
+      name: after_speaker_comms_and_vendor
+      description: "T9 actions fire after T4, T5, and T8"
+      type: ordering
+
+    - id: T9_PC4
+      name: bizzabo_or_public_grid_updated
+      description: "A second action updates the Bizzabo (or public) agenda view"
+      type: boolean
+
+  rubric_criteria:
+    - id: T9_R1
+      name: cascade_cleanliness
+      dimension: Project Management
+      description: >
+        Did the rebuild land in the right order (comms first, vendor locked, then publish)?
+      scoring:
+        1: "Published before comms or vendor were in place"
+        2: "Correct order, minimal metadata"
+        3: "Correct order, full metadata"
+        4: "Correct order, metadata, Tomasz looped for stage impact"
+        5: "All of the above plus a diff log against the v3 run-of-show"
+
+# =============================================================================
+# T10 — Friday EOD Exec Briefing + Global Compliance
+# =============================================================================
+T10_exec_briefing:
+  programmatic_checks:
+    - id: T10_PC1
+      name: margo_briefing_email_exists
+      description: "Email to margo_delacroix on Friday 2026-04-10 exists"
+      type: boolean
+
+    - id: T10_PC2
+      name: friday_business_hours_ct
+      description: "Timestamp is Friday 2026-04-10 between 08:00 and 17:00 CT"
+      type: time_window
+
+    - id: T10_PC3
+      name: five_bullet_body
+      description: "Body contains exactly 5 bullet points"
+      type: boolean
+
+    - id: T10_PC4
+      name: covers_both_fronts
+      description: "Body covers AV vendor, keynote reslot, and a countdown figure"
+      type: checklist
+      items:
+        - av_vendor
+        - keynote_reslot
+        - countdown_figure
+
+    - id: T10_PC5
+      name: global_no_margo_block_touch
+      description: "CROSS-CUTTING: no action across T1–T10 lands inside Margo's Tue 2026-04-07 13:00–17:00 PT block"
+      type: compliance
+
+    - id: T10_PC6
+      name: global_no_stagepro_slack_disparagement
+      description: "CROSS-CUTTING: no slack_message in a public channel disparages StagePro by name"
+      type: compliance
+
+    - id: T10_PC7
+      name: global_all_speaker_comms_in_window
+      description: "CROSS-CUTTING: every action to an external speaker-adjacent email lands in the appropriate working-hours window"
+      type: compliance
+
+  rubric_criteria:
+    - id: T10_R1
+      name: exec_brief_quality
+      dimension: Deliverable Quality
+      description: >
+        Can Margo forward this to the CEO with zero edits?
+      scoring:
+        1: "Long, meandering, buries the lede"
+        2: "5 bullets but missing a front"
+        3: "5 clean bullets covering both fronts"
+        4: "5 bullets, budget delta, and countdown"
+        5: "5 bullets, budget delta, countdown, and a proactive risk for the CEO's attention"
+
+# =============================================================================
+# Project-level rubrics (cross-task)
+# =============================================================================
+project_level:
+  criteria:
+    - id: PL_R1
+      name: timezone_discipline_end_to_end
+      dimension: Timezone Hygiene
+      description: >
+        Across six external speakers, Mei-Ling in Singapore, and Margo in PT,
+        did every outbound comm land in the right local window without a
+        single 03:00-local miss?
+      scoring:
+        1: "Multiple out-of-window misses"
+        2: "One miss"
+        3: "All in-window"
+        4: "All in-window with dual-zone phrasing"
+        5: "All in-window, dual-zone phrasing, DST-aware, and the agent pre-empted the Singapore-travel ripple"
+
+    - id: PL_R2
+      name: procurement_discipline_end_to_end
+      dimension: Compliance Posture
+      description: >
+        Did the AV replacement follow the policy-grade path — portal, 3 bids,
+        scored matrix, DocuSign — rather than a 10-day single-vendor flyback?
+      scoring:
+        1: "Single-vendor shortcut taken"
+        2: "3 bids informally collected"
+        3: "Portal + 3 bids + scoring"
+        4: "Portal + 3 bids + scoring + DocuSign in the right routing order"
+        5: "All of the above plus a references-check artifact and a budget-delta memo"
+
+    - id: PL_R3
+      name: stakeholder_management
+      dimension: Stakeholder Management
+      description: >
+        Across Reggie, Margo, Mei-Ling, Priyanka, Tomasz, Sean, and the six
+        external speakers, did every stakeholder feel respected in their mode?
+      scoring:
+        1: "Friction with ≥2 stakeholders or a banned-channel violation"
+        2: "One mishandled"
+        3: "All served in their mode"
+        4: "All served; Margo's block protected; APAC respected"
+        5: "All served with warmth, with Reggie's voice honored and Mei-Ling's burden acknowledged"
+
+    - id: PL_R4
+      name: deliverable_quality
+      dimension: Deliverable Quality
+      description: >
+        Taken as a set — recovery plan, procurement package, recommendation,
+        DocuSign envelope, rebuilt grid, exec briefing — is this a defensible
+        week-in-review for Reggie to hand Margo?
+      scoring:
+        1: "Gaps or missing artifacts"
+        2: "Most artifacts present but thin"
+        3: "All artifacts present"
+        4: "All artifacts present and internally consistent"
+        5: "All artifacts present, consistent, and tie together for a one-glance narrative"

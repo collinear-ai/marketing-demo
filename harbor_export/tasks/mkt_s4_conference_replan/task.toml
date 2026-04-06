@@ -1,0 +1,33 @@
+schema_version = "1.1"
+source = "collinear-ai/long-horizon-gym"
+
+[task]
+name = "collinear-ai/mkt_s4_conference_replan"
+description = "### mkt_s4_conference_replan — Annual user conference replan after vendor cancellation  **Agent role:** Chief of Staff to Events Director Reggie Okonkwo. **Duration:** 1 week. **Tasks:** 10. **Dominan"
+keywords = ["marketing", "long-horizon", "multi-persona", "enterprise", "agent-eval"]
+
+[metadata]
+domain = "marketing"
+dag_tasks = 10
+programmatic_checks = 50
+personas = 14
+input_files = 17
+agent_role = "Chief of Staff to Events Director Reggie Okonkwo"
+anchor_tz = "America/New_York"
+kickoff_time = "2026-04-06T09:00:00-04:00"
+
+[environment]
+build_timeout_sec = 300.0
+cpus = 2
+memory_mb = 4096
+storage_mb = 5120
+allow_internet = true
+
+[environment.env]
+OPENAI_API_KEY = "${OPENAI_API_KEY}"
+
+[agent]
+timeout_sec = 5400
+
+[verifier]
+timeout_sec = 120

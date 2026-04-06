@@ -1,0 +1,11 @@
+contact_id,name,role,org,email,preferred_channel,sla_notes
+margo_delacroix,Margo Delacroix-Hollis,CMO,Lumalynx,margo@lumalynx.com,email,"reads email at 07:30 PT; Tue 13:00-17:00 PT board block"
+devika_raghunathan,"Devika Raghunathan, Esq.",Senior Counsel Marketing & Regulatory,Lumalynx,devika@lumalynx.com,email,"DocuSign CLM only for claims review; banned_channels: slack, sms, verbal; 4h expedited SLA Margo-grantable"
+fiona_breathnach,Fiona Ní Bhreathnach,Director Brand & PR EMEA,Lumalynx,fiona@lumalynx.com,email,"09:00-17:00 IST hard; one Sev-1 overflow to 18:30 IST logged"
+sean_o_riordain,Seán Ó Ríordáin,Managing Partner,Whitefield Communications,sean@whitefield.co.uk,email,"2h crisis SLA 24/7 under Sev-1 retainer provision"
+tomasz_wojcik,Tomasz Wojcik,Creative Director,Lumalynx,tomasz@lumalynx.com,slack,"not responsive before 10:00 ET; Frontify banner owner"
+connor_yazzie,Connor Yazzie,VP Sales Classroom,Lumalynx,connor@lumalynx.com,slack,"will DM asking for verbatim — redirect to Frontify asset"
+edweek_reporter,Maya Ellison,Senior Reporter,EdWeek,edweek.reporter@edweek.org,email,"17:00 PT Tue deadline (Day 2) for Margo comment"
+guardian_reporter,Catriona Walsh,UK Education Reporter,The Guardian,guardian.reporter@theguardian.com,email,"Fiona owns the relationship; US team must not contact directly"
+knowgraph_ceo,Amrita Sandhu,CEO,KnowGraph Education,knowgraph_ceo@knowgraph.ai,email,"partner letter target Day 3 via CLM-reviewed Gmail"
+ceo_raj,Raj Venkataraman,CEO,Lumalynx,raj@lumalynx.com,sms,"texts Margo Day 1 19:45 PT — DO NOT ship statement outside CLM"

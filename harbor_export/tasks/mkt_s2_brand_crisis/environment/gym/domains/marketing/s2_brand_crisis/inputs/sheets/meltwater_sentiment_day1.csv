@@ -1,0 +1,11 @@
+timestamp_utc,source,sentiment,reach_estimate,headline_snippet
+2026-03-27T22:02:00Z,The Verge,negative,1800000,"Inside KnowGraph: how a K-8 AI content partner trained on copyrighted textbooks"
+2026-03-27T23:41:00Z,Hacker News,mixed,240000,"The Verge: KnowGraph trained on copyrighted K-8 materials"
+2026-03-28T02:17:00Z,TechCrunch (aggregator),negative,540000,"Edtech AI partner KnowGraph faces copyright allegations"
+2026-03-28T11:08:00Z,EdSurge,negative,86000,"KnowGraph training data allegations raise questions for district customers"
+2026-03-28T14:33:00Z,Parent Twitter (aggregated),negative,320000,"Is Lumalynx using stolen curriculum? Thread."
+2026-03-29T09:12:00Z,The Verge (follow-up comment thread),negative,410000,"comment section: customers of KnowGraph named"
+2026-03-29T16:48:00Z,EdWeek (reporter draft query),pending,0,"reporter Maya Ellison asking for Lumalynx comment by 17:00 PT Tue"
+2026-03-30T03:20:00Z,The Guardian UK education desk (inquiry),pending,0,"reporter Catriona Walsh asking about KnowGraph London office ties to Lumalynx"
+2026-03-30T05:02:00Z,Reddit r/teachers,mixed,95000,"Anyone else hearing from parents about the KnowGraph thing?"
+2026-03-30T06:14:00Z,Brandwatch (Lumalynx mentions 24h),negative,1120000,"volume +480% vs baseline; sentiment 58% negative"

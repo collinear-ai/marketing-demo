@@ -1,0 +1,24 @@
+channel: "#lumasummit-speakers"
+platform: slack
+participants: [reggie_okonkwo, sean_o_riordain, mei_ling_siu, fiona_breathnach]
+messages:
+  - from: sean_o_riordain
+    timestamp: 2026-04-06T14:10:00+01:00
+    text: "Grand. I have the Deshpande conflict in my inbox — her office wants Wednesday 11:00 CT. I'll draft the confirmation and send it to the CoS to route. Please send it INSIDE her PT window (07:30–18:00 PT). I will personally be annoyed if I see a timestamp outside that window."
+    thread_id: null
+  - from: fiona_breathnach
+    timestamp: 2026-04-06T14:22:00+01:00
+    text: "For Marwick and Sutton in the UK — same deal, local working hours only. Marwick is Hackney, term-time, so please assume 08:30–17:30. Sutton is Edinburgh, university term, 09:00–17:00."
+    thread_id: null
+  - from: sean_o_riordain
+    timestamp: 2026-04-06T14:25:00+01:00
+    text: "And for Patel (Delhi) — he once wrote me a three-paragraph email about being pinged at 02:40 IST. Do not repeat it."
+    thread_id: null
+  - from: mei_ling_siu
+    timestamp: 2026-04-07T10:15:00+08:00
+    text: "For Wei-Ming Lim (MOE Singapore) I can brief him directly if someone wants — but it's cleaner if the roster comms go through Whitefield with the rest. 09:00–18:00 SGT, weekday only."
+    thread_id: null
+  - from: reggie_okonkwo
+    timestamp: 2026-04-06T09:40:00-05:00
+    text: "CoS is staggering the sends. Six speakers, six windows, six sends. No batch-at-14:00 nonsense."
+    thread_id: null
