@@ -1,0 +1,18 @@
+line_item,category,vendor,budgeted_amount,spent_to_date,remaining,notes
+AV/Production,Production,StagePro Events,$700000,$340000,$360000,Deposit paid Sep 2025; remaining payments on hold due to bankruptcy
+Venue Rental,Venue,McCormick Place / ASM Global,$185000,$92500,$92500,50% deposit paid Jan 2026; balance due June 2026
+Catering & F&B,Venue,Levy Restaurants (McCormick exclusive),$165000,$0,$165000,Menu selections due April 15; final headcount due June 30
+Speaker Travel & Accommodation,Content,Various airlines + Hyatt Regency,$95000,$18200,$76800,"22 external speakers; 12 requiring flights, 18 requiring hotel"
+Sponsor Activations,Sponsorship,Multiple vendors,$72000,$15000,$57000,8 sponsors; activation buildout varies by tier
+Registration Platform,Technology,Cvent,$38000,$38000,$0,Annual license; fully paid
+Mobile App & Agenda,Technology,Bizzabo,$28000,$14000,$14000,50% deposit paid; balance due May 15
+Signage & Wayfinding,Creative,Chicago Sign Co.,$42000,$0,$42000,Design pending rebrand finalization; production starts May 1
+Event Photography & Videography,Content,Windy City Media,$35000,$5000,$30000,Deposit paid; 2 photographers + 1 videographer for 3 days
+Virtual Streaming Platform,Technology,Hopin,$22000,$22000,$0,Annual license for virtual overflow; fully paid
+Event Insurance,Operations,Hartford Event Coverage,$18000,$18000,$0,"Paid in full; covers cancellation, GL, weather"
+Contingency Reserve,Operations,N/A,$55000,$0,$55000,~5% contingency on $1.1M operating budget
+Staff Travel & Per Diem,Operations,Various,$48000,$8500,$39500,12 Lumalynx staff on-site for 5 days (setup through teardown)
+Networking Event (Day 2 Reception),Hospitality,Navy Pier venue + caterer,$65000,$20000,$45000,"Deposit paid; 600 expected attendees at offsite reception, rooftop venue"
+Marketing & Promotion,Marketing,Internal + paid media,$32000,$12000,$20000,Pre-event email campaigns + paid social promotion
+Swag & Branded Materials,Creative,Custom Ink + Frontify assets,$20000,$0,$20000,Design in progress; production starts May 15
+TOTAL,,,,$1200000,$603200,$596800,Approved budget: $1.2M; Margo hard cap: $1.4M all-in

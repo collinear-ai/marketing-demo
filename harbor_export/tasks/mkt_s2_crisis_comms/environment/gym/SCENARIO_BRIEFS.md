@@ -1,0 +1,5 @@
+# Scenario Briefs
+
+## mkt_s2_crisis_comms — KnowGraph Brand Crisis Response
+
+On March 27, 2026, The Verge published an investigative piece alleging that KnowGraph Education — Lumalynx Learning's curriculum content licensing partner — built its problem set library by scraping copyrighted textbook content without license. Lumalynx is named as KnowGraph's "highest-profile distribution partner." The agent, acting as Crisis Communications Lead reporting to CMO Margo Delacroix-Hollis, must manage a 5-day multi-stakeholder crisis response spanning internal comms, partner relations, press strategy, parent reassurance (B2C), district buyer reassurance (B2B), FTC regulatory exposure mitigation, and marketing material audit — all while the Tutor 3.0 launch re-sequence is still in flight and the CEO's personal relationship with the KnowGraph founder constrains the range of acceptable responses. The dominant trap is the tension between partner loyalty and brand protection, compounded by Connor Yazzie's recurring pressure to freelance crisis messaging to his sales team before legal clearance.

@@ -1,0 +1,11 @@
+region,regional_lead,registered,confirmed,travel_booked,hotel_booked,visa_required,notes
+US West,N/A (domestic),285,268,N/A,142,0,Includes SF HQ staff and California/Oregon/Washington educators
+US East,N/A (domestic),310,289,N/A,195,0,Largest domestic segment; heavy Northeast district buyer presence
+US Central,N/A (domestic),420,398,N/A,85,0,"Includes Chicago locals (no hotel needed for ~180); strong Midwest district turnout"
+US South,N/A (domestic),140,128,N/A,98,0,Growing segment; Texas and Florida district buyers
+EMEA,fiona_breathnach,60,52,38,45,12,"Dublin office staff (8), UK educators (22), EU educators (22); 12 require US visa (B-1)"
+APAC,mei_ling_siu,85,72,48,65,35,"Singapore office staff (6), Australia (18), India (28), Japan (15), SEA (18); 35 require US visa (B-1/B-2)"
+Speakers (external),sunita_kaur_gill,22,22,14,18,3,External speakers with travel arrangements; 3 international speakers need visa
+Sponsors,aanya_iyer,48,45,12,28,0,"Sponsor booth staff and VIP attendees; mostly domestic"
+Lumalynx Staff,reggie_okonkwo,30,30,8,22,0,"On-site event staff, executives, product team"
+TOTAL,,1400,1304,120,698,50,"Registration target: 1,400; current confirmed: 1,304 (93%)"

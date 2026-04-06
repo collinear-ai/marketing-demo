@@ -1,0 +1,35 @@
+request_id,parent_name,product,plan,monthly_amount,refund_months_requested,reason,timestamp,city,state,status
+REF-2026-0327-001,Jennifer Holloway,Lumalynx Home,Annual,29.99,3,"Read Verge article — concerned about content integrity",2026-03-27T08:14:00-04:00,Austin,TX,hold_pending
+REF-2026-0327-002,Michael & Sarah Okonkwo,Lumalynx Home,Monthly,34.99,1,"KnowGraph content scraping — want refund until resolved",2026-03-27T08:31:00-04:00,Bethesda,MD,hold_pending
+REF-2026-0327-003,David Chen-Ramirez,Lumalynx Home,Annual,29.99,3,"Teacher recommended this — now embarrassed. PTA group discussing.",2026-03-27T08:42:00-05:00,Portland,OR,hold_pending
+REF-2026-0327-004,Amara Osei,Lumalynx Home,Monthly,34.99,2,"Is the content safe? My daughter has state test next month.",2026-03-27T09:03:00-04:00,Fairfax,VA,hold_pending
+REF-2026-0327-005,Lindsay Park-Johannsen,Lumalynx Home,Annual,29.99,6,"Teacher AND subscriber. Parent Slack channel is on fire. Need response before Monday.",2026-03-27T09:17:00-05:00,Chicago,IL,hold_pending
+REF-2026-0327-006,Priya Venkatesh,Lumalynx Home,Monthly,34.99,1,"If the math problems are scraped from textbooks I already own why am I paying for this?",2026-03-27T09:28:00-07:00,San Jose,CA,hold_pending
+REF-2026-0327-007,Robert McAllister,Lumalynx Home,Annual,29.99,12,"Want full annual refund. Unacceptable that an AI company uses stolen content.",2026-03-27T09:45:00-04:00,Raleigh,NC,hold_pending
+REF-2026-0327-008,Tomoko Ishida-Williams,Lumalynx Home,Monthly,34.99,2,"Cancelling subscription. Will reconsider if KnowGraph situation resolved.",2026-03-27T10:02:00-07:00,Seattle,WA,hold_pending
+REF-2026-0327-009,Carlos Mendez,Lumalynx Home,Annual,29.99,3,"Two kids on the platform. Need assurance content is legitimate before continuing.",2026-03-27T10:14:00-05:00,Houston,TX,hold_pending
+REF-2026-0327-010,Rebecca Thornton,Lumalynx Home,Monthly,34.99,1,"Saw this on Twitter. Is it true? If so I want a refund.",2026-03-27T10:33:00-04:00,Atlanta,GA,hold_pending
+REF-2026-0327-011,James & Patricia Oduya,Lumalynx Home,Annual,29.99,6,"School district is also looking into this. We use Home AND our school uses Classroom.",2026-03-27T10:51:00-04:00,Silver Spring,MD,hold_pending
+REF-2026-0327-012,Hannah Bergstrom,Lumalynx Home,Monthly,34.99,1,"Daughter loves the app but I can't support a company that uses stolen content",2026-03-27T11:04:00-05:00,Minneapolis,MN,hold_pending
+REF-2026-0327-013,Anil Kapoor,Lumalynx Home,Annual,29.99,2,"Concerned about whether CCSS alignment claims are valid if content was scraped",2026-03-27T11:22:00-07:00,Irvine,CA,hold_pending
+REF-2026-0327-014,Michelle Dubois,Lumalynx Home,Monthly,34.99,3,"This is a trust issue. I trusted your brand with my children's education.",2026-03-27T11:38:00-04:00,Boston,MA,hold_pending
+REF-2026-0327-015,Kenji Nakamura,Lumalynx Home,Annual,29.99,1,"AP exam prep season. Need to know if the content is reliable before my son's exam.",2026-03-27T11:55:00-07:00,Palo Alto,CA,hold_pending
+REF-2026-0327-016,Latasha Williams-Brown,Lumalynx Home,Monthly,34.99,2,"Single mom. Can't afford to pay for potentially fraudulent content.",2026-03-27T12:07:00-05:00,Dallas,TX,hold_pending
+REF-2026-0327-017,Erik Johansson,Lumalynx Home,Annual,29.99,3,"IT professional — I understand scraping. This is not a gray area. Refund please.",2026-03-27T12:19:00-04:00,Brooklyn,NY,hold_pending
+REF-2026-0327-018,Fatima Al-Hassan,Lumalynx Home,Monthly,34.99,1,"My daughter's teacher flagged this to parents in a class email this morning.",2026-03-27T12:34:00-07:00,Phoenix,AZ,hold_pending
+REF-2026-0327-019,Christopher Ng,Lumalynx Home,Annual,29.99,6,"Board member at our school. This will come up at the next meeting. Need clarity.",2026-03-27T12:48:00-07:00,San Francisco,CA,hold_pending
+REF-2026-0327-020,Stephanie Russo,Lumalynx Home,Monthly,34.99,1,"Three children on Lumalynx. $105/month. That's real money for scraped content.",2026-03-27T13:01:00-04:00,Philadelphia,PA,hold_pending
+REF-2026-0327-021,Darnell Jackson,Lumalynx Home,Annual,29.99,2,"Coach and parent. My players' parents are asking me about this.",2026-03-27T13:12:00-05:00,Memphis,TN,hold_pending
+REF-2026-0327-022,Yolanda Cheng,Lumalynx Home,Monthly,34.99,1,"Switching to Khan Academy until this is resolved. Please process refund.",2026-03-27T13:25:00-07:00,Los Angeles,CA,hold_pending
+REF-2026-0327-023,Brian O'Malley,Lumalynx Home,Annual,29.99,3,"Lawyer. Interested to see how you handle this from a consumer protection standpoint.",2026-03-27T13:33:00-04:00,Washington,DC,hold_pending
+REF-2026-0327-024,Sunita Reddy,Lumalynx Home,Monthly,34.99,2,"Part of a homeschool co-op. 12 families in our group use Lumalynx. All watching.",2026-03-27T13:41:00-04:00,Charlotte,NC,hold_pending
+REF-2026-0327-025,Marcus Thompson,Lumalynx Home,Annual,29.99,1,"My kid is in 5th grade and struggles with math. I need to trust the practice problems are real.",2026-03-27T13:48:00-05:00,Nashville,TN,hold_pending
+REF-2026-0327-026,Elena Volkov,Lumalynx Home,Monthly,34.99,1,"Immigrant family — education is everything. Cannot accept this.",2026-03-27T13:52:00-04:00,Miami,FL,hold_pending
+REF-2026-0327-027,Timothy Walsh,Lumalynx Home,Annual,29.99,6,"Will report to FTC if not resolved transparently.",2026-03-27T13:55:00-04:00,Denver,CO,hold_pending
+REF-2026-0327-028,Nkechi Adeyemi,Lumalynx Home,Monthly,34.99,1,"Pediatrician. Multiple patients' families use this. Concerned about quality.",2026-03-27T13:58:00-04:00,Baltimore,MD,hold_pending
+REF-2026-0327-029,Jason & Amy Kim,Lumalynx Home,Annual,29.99,3,"Two kids, grades 4 and 7. Both using daily. Need to know if content is legitimate.",2026-03-27T14:01:00-07:00,Bellevue,WA,hold_pending
+REF-2026-0327-030,Maria Santos-Cruz,Lumalynx Home,Monthly,34.99,2,"ESL family. We rely on Lumalynx for math because the explanations are clear. Please fix this.",2026-03-27T14:03:00-05:00,San Antonio,TX,hold_pending
+REF-2026-0327-031,William Abernathy III,Lumalynx Home,Annual,29.99,12,"Private school parent. Our school is considering Classroom. This may kill the deal.",2026-03-27T14:05:00-04:00,Greenwich,CT,hold_pending
+REF-2026-0327-032,Rachel Goldstein,Lumalynx Home,Monthly,34.99,1,"Math teacher. If content is scraped from Pearson that means it IS curriculum-aligned — but illegally. Complicated.",2026-03-27T14:07:00-04:00,New York,NY,hold_pending
+REF-2026-0327-033,Devin Blackwell,Lumalynx Home,Annual,29.99,2,"Tech blogger with 15K followers. Will write about how you respond. Do it well.",2026-03-27T14:09:00-07:00,Oakland,CA,hold_pending
+REF-2026-0327-034,Ayako Tanaka,Lumalynx Home,Monthly,34.99,1,"My daughter's confidence in math just started improving. Please don't let this ruin it.",2026-03-27T14:11:00-07:00,Pasadena,CA,hold_pending

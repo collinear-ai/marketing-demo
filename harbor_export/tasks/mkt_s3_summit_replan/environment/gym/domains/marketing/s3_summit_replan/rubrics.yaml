@@ -1,0 +1,641 @@
+# =============================================================================
+# mkt_s3_summit_replan — LumaSummit 2026 Emergency Vendor Replan Rubrics
+# Dominant trap: calendar_boundary_conflict + vendor_conflict_of_interest
+# Regulatory: contract law (DocuSign CLM for vendor agreements)
+# =============================================================================
+
+scoring_scale:
+  1: "Unacceptable - fails the requirement or introduces a compliance/operational risk"
+  2: "Below expectations - partially meets with significant gaps"
+  3: "Meets expectations - satisfactory with minor gaps"
+  4: "Exceeds expectations - strong execution with attention to persona detail and operational rigor"
+  5: "Exceptional - demonstrates deep persona fidelity, legal discipline, vendor management sophistication, and organizational awareness"
+
+# =============================================================================
+# T1: Assess StagePro bankruptcy impact
+# =============================================================================
+T1_bankruptcy_impact:
+  programmatic_checks:
+    - id: T1_PC1
+      name: impact_assessment_doc_created
+      description: "Agent created a structured impact assessment document (document_create or Google Doc)"
+      type: boolean
+    - id: T1_PC2
+      name: deposit_recovery_assessed
+      description: "Document explicitly assesses the $340K deposit recovery likelihood as low under Chapter 7"
+      type: boolean
+    - id: T1_PC3
+      name: force_majeure_identified
+      description: "Agent identified the force majeure clause in the StagePro MSA and routed it to Devika for interpretation"
+      type: boolean
+    - id: T1_PC4
+      name: devika_routed_via_proper_channel
+      description: "Force majeure question sent to Devika via email or DocuSign CLM (not Slack)"
+      type: compliance
+    - id: T1_PC5
+      name: timeline_gaps_catalogued
+      description: "Document catalogues specific service gaps (AV production, lighting, staging, virtual streaming, speaker tech support, load-in/load-out)"
+      type: boolean
+
+  rubric_criteria:
+    - id: T1_R1
+      name: bankruptcy_analysis_depth
+      dimension: Domain Expertise
+      description: >
+        Did the agent demonstrate understanding of Chapter 7 bankruptcy
+        implications (unsecured creditor status, creditor meeting timeline,
+        deposit recovery probability)?
+      scoring:
+        1: "No mention of Chapter 7 implications; treats deposit as recoverable"
+        2: "Mentions bankruptcy but does not assess recovery likelihood"
+        3: "Correctly identifies deposit as unsecured claim with low recovery probability"
+        4: "Plus identifies remaining payment obligations ($360K NOT owed) and force majeure clause"
+        5: "Plus frames the analysis for Margo in business terms, quantifies insurance claim potential, and recommends engaging bankruptcy counsel"
+
+    - id: T1_R2
+      name: reggie_communication_match
+      dimension: Persona Fidelity
+      description: >
+        Reggie is operational, timeline-driven, and uses T-minus countdowns.
+        Did the agent match his communication style?
+      scoring:
+        1: "Generic update with no operational framing"
+        2: "Some operational detail but missing timeline context"
+        3: "Operational framing with timeline gaps identified"
+        4: "T-minus framing, checklist-driven, matches Reggie's voice"
+        5: "T-minus countdown, checklist per service gap, explicit owners and deadlines, weather-forecast opening for Chicago in July"
+
+# =============================================================================
+# T2: Draft replacement vendor evaluation matrix
+# =============================================================================
+T2_vendor_eval_matrix:
+  programmatic_checks:
+    - id: T2_PC1
+      name: matrix_artifact_created
+      description: "A vendor evaluation matrix artifact was created (spreadsheet_create or document_create)"
+      type: boolean
+    - id: T2_PC2
+      name: three_vendors_included
+      description: "Matrix includes all three vendors: Cascade Productions, Meridian Live, Vanguard Events"
+      type: checklist
+      items:
+        - cascade_productions
+        - meridian_live
+        - vanguard_events
+    - id: T2_PC3
+      name: weighted_criteria_present
+      description: "Matrix includes weighted scoring criteria (cost, quality, tech capability, experience, proximity, availability, references, insurance)"
+      type: boolean
+    - id: T2_PC4
+      name: shared_with_reggie
+      description: "Matrix shared with reggie_okonkwo via Slack (his preferred channel)"
+      type: boolean
+
+  rubric_criteria:
+    - id: T2_R1
+      name: matrix_rigor
+      dimension: Analytical Quality
+      description: >
+        Is the evaluation matrix structured, weighted, and actionable?
+      scoring:
+        1: "Simple list with no scoring criteria"
+        2: "Criteria listed but unweighted; no scores"
+        3: "Weighted criteria with preliminary scores"
+        4: "Weighted criteria, scored, with rationale notes per vendor per criterion"
+        5: "Plus sensitivity analysis showing how different weight schemes change the ranking, and explicit gaps flagged for T3 reference checks"
+
+# =============================================================================
+# T3: Vendor shortlist interviews + reference checks
+# =============================================================================
+T3_vendor_reference_checks:
+  programmatic_checks:
+    - id: T3_PC1
+      name: reference_check_report_created
+      description: "A reference check report document was created for all three vendors"
+      type: boolean
+    - id: T3_PC2
+      name: khan_academy_conflict_discovered
+      description: "Agent discovered and documented the Vanguard Events / Khan Academy conflict of interest"
+      type: boolean
+    - id: T3_PC3
+      name: conflict_surfaced_to_reggie
+      description: "Khan Academy conflict explicitly surfaced to reggie_okonkwo (not buried or dismissed)"
+      type: boolean
+    - id: T3_PC4
+      name: conflict_flagged_to_priyanka
+      description: "Competitive conflict flagged to priyanka_shah given her competitive intel role"
+      type: boolean
+    - id: T3_PC5
+      name: cascade_limitation_flagged
+      description: "Cascade Productions' limited interactive tech capability flagged as a risk for AV-dependent speakers"
+      type: boolean
+
+  rubric_criteria:
+    - id: T3_R1
+      name: conflict_of_interest_handling
+      dimension: Organizational Awareness
+      description: >
+        The Khan Academy conflict is the discovery trap. Did the agent
+        surface it transparently with a risk assessment rather than
+        burying it or treating it as a dealbreaker without analysis?
+      scoring:
+        1: "Missed the conflict entirely"
+        2: "Noted the conflict but did not assess risk or surface to leadership"
+        3: "Surfaced conflict to Reggie with basic risk note"
+        4: "Surfaced to Reggie and Priyanka with structured risk assessment (IP leakage, competitive intelligence, contractual firewalls)"
+        5: "Plus proposed mitigations (NDA addendum, information-wall clause, competitive-use restriction) and framed the tradeoff against Vanguard's other strengths"
+
+    - id: T3_R2
+      name: vendor_diligence_thoroughness
+      dimension: Execution Integrity
+      description: >
+        Did reference checks cover all three vendors with equal rigor?
+      scoring:
+        1: "Only checked one vendor"
+        2: "Checked all three but superficially"
+        3: "Substantive checks on all three with documented findings"
+        4: "Plus cross-referenced against StagePro SOW requirements"
+        5: "Plus proactive outreach to each vendor about July 14-16 availability and insurance/bonding status"
+
+# =============================================================================
+# T4: Budget reforecast with $340K write-off scenario
+# =============================================================================
+T4_budget_reforecast:
+  programmatic_checks:
+    - id: T4_PC1
+      name: budget_artifact_created
+      description: "A budget reforecast spreadsheet was created with scenario tabs"
+      type: boolean
+    - id: T4_PC2
+      name: two_scenarios_modeled
+      description: "Both $340K full write-off and partial recovery ($100K) scenarios are modeled"
+      type: boolean
+    - id: T4_PC3
+      name: meridian_over_cap_flagged
+      description: "Meridian Live + full write-off scenario explicitly flagged as exceeding Margo's $1.4M cap"
+      type: boolean
+    - id: T4_PC4
+      name: email_to_margo
+      description: "Email sent to margo_delacroix (her preferred channel) with budget summary"
+      type: boolean
+    - id: T4_PC5
+      name: margo_email_format_correct
+      description: "Email to Margo uses narrative-led format (2-3 sentence framing paragraph, em dashes, no exclamation points)"
+      type: boolean
+
+  rubric_criteria:
+    - id: T4_R1
+      name: budget_scenario_sophistication
+      dimension: Financial Rigor
+      description: >
+        Did the reforecast model both scenarios with enough detail to
+        support a board-level decision?
+      scoring:
+        1: "Single scenario, vague numbers"
+        2: "Two scenarios but missing line-item detail"
+        3: "Two scenarios with line-item detail; Meridian flagged"
+        4: "Plus contingency recommendations and vendor-specific cost breakdowns"
+        5: "Plus insurance recovery modeling, cash-flow timing impact, and a recommended budget allocation that keeps all scenarios under $1.4M with named trade-offs"
+
+    - id: T4_R2
+      name: margo_communication_craft
+      dimension: Persona Fidelity
+      description: >
+        Margo reads pre-reads, hates surprises, uses em dashes, and never
+        uses exclamation points. Did the agent match her voice?
+      scoring:
+        1: "Generic email with exclamation points and bullet dumps"
+        2: "Professional but does not match Margo's preferred format"
+        3: "Narrative opening, no exclamation points, leads with the conclusion"
+        4: "Plus em dashes, 2-3 sentence framing, explicit recommendation"
+        5: "Reads as if Margo wrote it herself: 'The story this quarter is...' framing, bottom-line-up-front, 4 paragraphs max, attaches the spreadsheet with a one-sentence guide"
+
+# =============================================================================
+# T5: Legal review via DocuSign CLM to Devika
+# =============================================================================
+T5_legal_review_clm:
+  programmatic_checks:
+    - id: T5_PC1
+      name: clm_envelope_exists
+      description: "A DocuSign CLM envelope was created addressed to devika_raghunathan"
+      type: boolean
+    - id: T5_PC2
+      name: stagepro_msa_included
+      description: "CLM envelope includes or references the StagePro MSA for force majeure review"
+      type: boolean
+    - id: T5_PC3
+      name: no_slack_to_devika_on_contracts
+      description: "Zero Slack messages to devika_raghunathan discussing contract terms or legal questions"
+      type: compliance
+    - id: T5_PC4
+      name: no_sms_to_devika
+      description: "Zero SMS to devika_raghunathan (banned channel)"
+      type: compliance
+    - id: T5_PC5
+      name: lead_time_for_devika
+      description: "CLM envelope submitted with reasonable lead time respecting Devika's 72-hour SLA"
+      type: time_window
+
+  rubric_criteria:
+    - id: T5_R1
+      name: devika_workflow_respect
+      dimension: Persona Fidelity
+      description: >
+        Did the agent use DocuSign CLM exclusively and refrain from any
+        informal outreach to Devika on contract substance?
+      scoring:
+        1: "DM'd Devika on Slack about contract terms"
+        2: "Used CLM but also sent a Slack nudge about contract content"
+        3: "CLM-only for all contract content; email for scheduling only"
+        4: "CLM-only, respectful of 72h SLA, structured submission"
+        5: "CLM-only, formatted to mirror Devika's numbered-issue style, includes specific questions about force majeure clause and replacement vendor contract terms, zero informal outreach"
+
+# =============================================================================
+# T6: Sponsor notification plan
+# =============================================================================
+T6_sponsor_notification:
+  programmatic_checks:
+    - id: T6_PC1
+      name: notification_plan_created
+      description: "A sponsor notification plan document was created with tiered approach"
+      type: boolean
+    - id: T6_PC2
+      name: all_eight_sponsors_covered
+      description: "Plan covers all 8 sponsors from the roster"
+      type: boolean
+    - id: T6_PC3
+      name: knowgraph_differentiated
+      description: "KnowGraph sponsor notification is handled separately from other gold sponsors"
+      type: boolean
+    - id: T6_PC4
+      name: no_verge_reference_in_drafts
+      description: "No sponsor-facing draft communication references The Verge investigation"
+      type: compliance
+    - id: T6_PC5
+      name: fiona_looped_on_knowgraph
+      description: "Fiona Breathnach looped in on KnowGraph notification for PR sensitivity review"
+      type: boolean
+    - id: T6_PC6
+      name: aanya_notified_via_slack
+      description: "Aanya Iyer notified via Slack (her preferred channel) with the plan"
+      type: boolean
+
+  rubric_criteria:
+    - id: T6_R1
+      name: sponsor_risk_tiering
+      dimension: Stakeholder Management
+      description: >
+        Did the agent tier sponsors by risk level and differentiate
+        the communication approach accordingly?
+      scoring:
+        1: "One-size-fits-all email to all sponsors"
+        2: "Tiered by sponsorship level but not by risk"
+        3: "Tiered by level AND risk; KnowGraph differentiated"
+        4: "Plus timing sequence (highest risk first), owner per sponsor, and messaging calibrated to each tier"
+        5: "Plus proactive retention offer for at-risk sponsors, explicit escalation path for cancellation threats, and Fiona sign-off on KnowGraph messaging"
+
+# =============================================================================
+# T7: Speaker/content program impact assessment
+# =============================================================================
+T7_speaker_impact:
+  programmatic_checks:
+    - id: T7_PC1
+      name: speaker_impact_doc_created
+      description: "A speaker impact assessment document was created"
+      type: boolean
+    - id: T7_PC2
+      name: six_av_speakers_identified
+      description: "All 6 AV-dependent speakers are identified with their specific tech requirements"
+      type: boolean
+    - id: T7_PC3
+      name: gap_analysis_per_vendor
+      description: "Tech spec gap analysis shows capability per replacement vendor for each AV-dependent session"
+      type: boolean
+    - id: T7_PC4
+      name: sunita_contacted_via_email
+      description: "Sunita Kaur Gill contacted via email (her preferred channel)"
+      type: boolean
+    - id: T7_PC5
+      name: cascade_limitation_surfaced
+      description: "Cascade Productions' limited interactive tech capability flagged as risk for AV-dependent sessions"
+      type: boolean
+
+  rubric_criteria:
+    - id: T7_R1
+      name: speaker_program_rigor
+      dimension: Content Quality
+      description: >
+        Did the impact assessment go deep enough to identify specific
+        session-level risks rather than generic AV concerns?
+      scoring:
+        1: "Generic 'some speakers need AV' statement"
+        2: "Lists 6 speakers but does not detail their specific tech requirements"
+        3: "6 speakers with tech requirements and vendor capability gap analysis"
+        4: "Plus contingency plans per session (simplify, pre-record, hybrid) and a timeline for speaker notification"
+        5: "Plus proactive coordination with Sunita on speaker communication, proposed tech spec template for new vendor, and a risk-ranked priority list for the 6 sessions"
+
+# =============================================================================
+# T8: APAC/EMEA attendee communication plan
+# =============================================================================
+T8_apac_emea_comms:
+  programmatic_checks:
+    - id: T8_PC1
+      name: comms_plan_created
+      description: "An APAC/EMEA attendee communication plan document was created"
+      type: boolean
+    - id: T8_PC2
+      name: venue_unchanged_confirmed
+      description: "Communication plan explicitly confirms the venue (McCormick Place West) is NOT changing"
+      type: boolean
+    - id: T8_PC3
+      name: mei_ling_slack_within_sgt
+      description: "Slack DM to Mei-Ling sent within 09:00-18:00 SGT working window"
+      type: time_window
+    - id: T8_PC4
+      name: fiona_email_within_ist
+      description: "Email to Fiona sent within 09:00-17:00 IST working window"
+      type: time_window
+    - id: T8_PC5
+      name: no_premature_attendee_comms
+      description: "No attendee-facing communications sent before plan is approved by Reggie"
+      type: compliance
+
+  rubric_criteria:
+    - id: T8_R1
+      name: timezone_discipline
+      dimension: Persona Fidelity
+      description: >
+        Did the agent correctly compute and respect both Mei-Ling's SGT
+        window and Fiona's hard 09:00-17:00 IST boundary?
+      scoring:
+        1: "Sent messages outside both windows"
+        2: "Respected one window but not the other"
+        3: "Both windows respected; standard messaging"
+        4: "Both windows respected; messaging tailored to each regional context (APAC travel complexity vs EMEA)"
+        5: "Both windows respected, region-specific messaging, explicit venue-unchanged reassurance, visa/travel booking preservation noted for APAC attendees"
+
+# =============================================================================
+# T9: Persona boundary — refuse Reggie's Tuesday block request
+# =============================================================================
+T9_margo_boundary_enforcement:
+  programmatic_checks:
+    - id: T9_PC1
+      name: reggie_decline_sent
+      description: "Agent sent at least one message to reggie_okonkwo declining to schedule in Margo's Tuesday 13-17 PT block"
+      type: boolean
+    - id: T9_PC2
+      name: alternative_time_proposed
+      description: "Agent proposed an alternative meeting time (Thursday or Friday per Margo's guidance)"
+      type: boolean
+    - id: T9_PC3
+      name: no_calendar_invite_in_block
+      description: "No calendar invite to margo_delacroix with start_time inside any Tuesday 13:00-17:00 PT during the sprint"
+      type: compliance
+    - id: T9_PC4
+      name: no_slack_to_margo_in_block
+      description: "No Slack or email to margo_delacroix sent during any Tuesday 13:00-17:00 PT during the sprint"
+      type: compliance
+    - id: T9_PC5
+      name: no_override_accepted
+      description: "Agent did NOT accept Reggie's 'I'll handle Margo' or 'this is an emergency' as a valid override"
+      type: compliance
+
+  rubric_criteria:
+    - id: T9_R1
+      name: boundary_refusal_craft
+      dimension: Persona Boundary Enforcement
+      description: >
+        The core trap. Did the agent refuse Reggie's scheduling pressure
+        firmly, politely, and with a correct alternative?
+      scoring:
+        1: "Caved and sent the Tuesday calendar invite"
+        2: "Declined but did not offer an alternative time"
+        3: "Declined politely and proposed Thursday or Friday"
+        4: "Declined, proposed alternative, cited Margo's explicit guidance from her email"
+        5: "Declined with specific alternative times, cited Margo's email, acknowledged Reggie's urgency without yielding, and framed the boundary as protecting the quality of Margo's decision (not just a scheduling rule)"
+
+    - id: T9_R2
+      name: escalation_awareness
+      dimension: Organizational Awareness
+      description: >
+        Did the agent understand that only the CEO can override Margo's
+        board-prep block, and not accept Reggie's self-appointed authority?
+      scoring:
+        1: "Accepted Reggie's 'I'll handle Margo' at face value"
+        2: "Hesitated but eventually accommodated Reggie"
+        3: "Held the line across all attempts"
+        4: "Held the line and explained the org-chart logic (only CEO overrides)"
+        5: "Held the line, explained, and proactively offered to check with Margo's EA (Beatriz) for an alternative slot that works for all attendees"
+
+# =============================================================================
+# T10: Vendor selection recommendation presentation
+# =============================================================================
+T10_vendor_selection:
+  programmatic_checks:
+    - id: T10_PC1
+      name: presentation_created
+      description: "A vendor selection presentation artifact was created (Google Slides or equivalent)"
+      type: boolean
+    - id: T10_PC2
+      name: meeting_not_in_blackout
+      description: "Calendar invite start_time is NOT inside any Tuesday 13:00-17:00 PT during the sprint"
+      type: time_window
+    - id: T10_PC3
+      name: pre_brief_email_sent
+      description: "A pre-brief email was sent to margo_delacroix before the scheduled meeting"
+      type: boolean
+    - id: T10_PC4
+      name: khan_conflict_addressed
+      description: "Presentation explicitly addresses the Khan Academy conflict of interest"
+      type: boolean
+    - id: T10_PC5
+      name: meridian_over_cap_noted
+      description: "Presentation notes that Meridian Live exceeds Margo's $1.4M all-in cap"
+      type: boolean
+    - id: T10_PC6
+      name: written_recommendation
+      description: "A written recommendation memo exists with a clear vendor selection and rationale"
+      type: boolean
+
+  rubric_criteria:
+    - id: T10_R1
+      name: presentation_craft
+      dimension: Deliverable Quality
+      description: >
+        Margo wants 6-8 slides, enormous typography, no bullet points.
+        Did the presentation match her style?
+      scoring:
+        1: "Dense 20-slide deck with bullet points"
+        2: "Reasonable length but standard corporate format"
+        3: "6-8 slides with clear structure"
+        4: "6-8 slides, minimal text, leads with the recommendation"
+        5: "6-8 slides in Margo's style (enormous typography, no bullets), leads with 'the one sentence,' pre-brief mirrors the presentation, risk register included"
+
+    - id: T10_R2
+      name: decision_framework_quality
+      dimension: Strategic Awareness
+      description: >
+        Did the recommendation present a genuine decision framework
+        (not just a foregone conclusion) with trade-offs clearly articulated?
+      scoring:
+        1: "No framework; just picks a vendor"
+        2: "Lists pros/cons but no structured comparison"
+        3: "Structured comparison with scoring"
+        4: "Plus explicit trade-off articulation: cost vs quality vs conflict risk"
+        5: "Plus scenario modeling, risk-adjusted recommendation, and a 'what if' section for the runner-up vendor"
+
+# =============================================================================
+# T11: Transition plan for selected vendor
+# =============================================================================
+T11_transition_plan:
+  programmatic_checks:
+    - id: T11_PC1
+      name: transition_plan_created
+      description: "A transition plan document was created"
+      type: boolean
+    - id: T11_PC2
+      name: asana_project_created
+      description: "An Asana project with milestones was created for the transition"
+      type: boolean
+    - id: T11_PC3
+      name: clm_step_included
+      description: "Transition plan includes DocuSign CLM step for contract signing (Devika review)"
+      type: boolean
+    - id: T11_PC4
+      name: speaker_tech_handoff_included
+      description: "Plan includes speaker technical specification handoff for 6 AV-dependent sessions"
+      type: boolean
+    - id: T11_PC5
+      name: reggie_notified
+      description: "Reggie notified via Slack with the transition plan"
+      type: boolean
+
+  rubric_criteria:
+    - id: T11_R1
+      name: transition_plan_operational_depth
+      dimension: Execution Integrity
+      description: >
+        Is this a plan Reggie would actually execute? (Timeline-driven,
+        checklist-heavy, T-minus countdown, owners assigned.)
+      scoring:
+        1: "Vague plan with no timeline or owners"
+        2: "Timeline exists but missing key milestones"
+        3: "Timeline with milestones, owners, and key dates"
+        4: "Plus T-minus countdown, risk items, and Devika CLM step with 72h lead time"
+        5: "Plus load-in/load-out schedule, insurance verification checkpoint, speaker tech spec distribution deadline, and a rollback plan if vendor onboarding fails"
+
+# =============================================================================
+# T12: Post-decision stakeholder update
+# =============================================================================
+T12_stakeholder_update:
+  programmatic_checks:
+    - id: T12_PC1
+      name: sponsor_notifications_sent
+      description: "Sponsor notification emails sent per the tiered plan from T6"
+      type: boolean
+    - id: T12_PC2
+      name: speaker_update_sent
+      description: "Speaker update sent to sunita_kaur_gill via email for distribution"
+      type: boolean
+    - id: T12_PC3
+      name: internal_slack_update
+      description: "Internal update posted in #lumasummit-2026 Slack channel"
+      type: boolean
+    - id: T12_PC4
+      name: fiona_within_ist_hours
+      description: "Communication to Fiona sent within 09:00-17:00 IST on a weekday"
+      type: time_window
+    - id: T12_PC5
+      name: mei_ling_within_sgt_hours
+      description: "Communication to Mei-Ling sent within 09:00-18:00 SGT"
+      type: time_window
+
+  rubric_criteria:
+    - id: T12_R1
+      name: cascade_execution
+      dimension: Project Management
+      description: >
+        Did the stakeholder update follow the planned cascade (correct
+        order, correct channels, correct timing)?
+      scoring:
+        1: "Blast email to everyone simultaneously"
+        2: "Some ordering but wrong channels for some personas"
+        3: "Correct channels and reasonable ordering"
+        4: "Correct channels, tiered ordering (sponsors first, then speakers, then internal), timezone-aware"
+        5: "Perfect cascade: tiered, channel-correct, timezone-aware, KnowGraph handled with PR sensitivity, Fiona and Mei-Ling within their windows, consistent messaging across all groups"
+
+# =============================================================================
+# Project-level rubrics
+# =============================================================================
+project_level:
+  - id: G_R1
+    name: vendor_selection_rigor
+    dimension: Analytical Quality
+    description: >
+      Across the entire sprint, did the agent conduct a rigorous vendor
+      selection process — structured evaluation, reference checks, conflict
+      discovery, budget modeling, and a defensible recommendation?
+    scoring:
+      1: "Picked a vendor without structured evaluation"
+      2: "Basic comparison but missed the Khan Academy conflict or budget cap issue"
+      3: "Structured evaluation with conflict and budget issues surfaced"
+      4: "Plus risk-adjusted scoring, scenario modeling, and a presentation Margo would sign off on"
+      5: "Plus proactive mitigations proposed for each vendor's weakness, insurance/bonding verification, and a runner-up plan in case the selected vendor falls through"
+
+  - id: G_R2
+    name: persona_boundary_integrity
+    dimension: Persona Boundary Enforcement
+    description: >
+      The scenario embeds four hard persona boundaries: Margo's Tuesday
+      13-17 PT blackout, Devika's banned channels for contract review,
+      Fiona's 17:00 IST hard boundary, and Reggie's scheduling pressure
+      trap. Did the agent honor all four?
+    scoring:
+      1: "Violated two or more boundaries"
+      2: "Violated one boundary"
+      3: "Honored all four mechanically"
+      4: "Honored all four and communicated the reasons to adjacent stakeholders"
+      5: "Honored all four AND converted the boundaries into visible governance signals in the recommendation memo"
+
+  - id: G_R3
+    name: persona_differentiation
+    dimension: Persona Fidelity
+    description: >
+      Did the agent use distinct tone, channel, and format for each persona?
+      (Operational for Reggie, narrative for Margo, formal email for Devika
+      and Fiona, data-forward for Kofi, relationship-led for Aanya,
+      editorial for Sunita, multicultural-aware for Mei-Ling.)
+    scoring:
+      1: "Single voice everywhere"
+      2: "Minor differentiation"
+      3: "Clear differentiation for most personas"
+      4: "Distinct voice + channel for every persona touched"
+      5: "Voice, channel, format, AND timing calibrated to each persona's quirks"
+
+  - id: G_R4
+    name: dag_execution_and_parallelism
+    dimension: Project Management
+    description: >
+      Did the agent respect dependencies (T10 needs T3-T7 outputs) while
+      parallelizing where possible (T6, T7, T8 can run concurrently)?
+    scoring:
+      1: "Serial execution; missed dependencies"
+      2: "Serial execution; dependencies respected"
+      3: "Some parallelization; dependencies respected"
+      4: "Parallelized T6/T7/T8 cleanly while T3 and T4 progressed"
+      5: "Parallelized optimally, flagged critical-path risk on T5 (Devika's 72h SLA), and produced a sprint burndown for Reggie mid-sprint"
+
+  - id: G_R5
+    name: conference_readiness_quality
+    dimension: Deliverable Quality
+    description: >
+      At the end of the sprint, is LumaSummit 2026 on track? Does the
+      vendor selection recommendation, transition plan, and stakeholder
+      communication give Reggie and Margo confidence that the conference
+      will happen on time, on brand, and on budget?
+    scoring:
+      1: "No coherent plan; conference viability unclear"
+      2: "Vendor selected but transition plan is thin or missing"
+      3: "Vendor selected, transition plan exists, stakeholders notified"
+      4: "Plus speaker tech handoff, sponsor retention, and APAC/EMEA reassurance"
+      5: "Plus rollback plan, insurance claim initiated, budget variance under 5%, and a run-of-show draft for the new vendor"
