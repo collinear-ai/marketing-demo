@@ -1,0 +1,1467 @@
+# =============================================================================
+# Marketing Domain Shared Persona Pool — Lumalynx Learning
+# =============================================================================
+# Lumalynx Learning is a mid-stage edtech company (Series C, $72M raised, 640
+# employees) that sells an AI-powered K-12 tutoring platform direct to parents
+# ("Lumalynx Home") and to school districts ("Lumalynx Classroom"). HQ is in
+# San Francisco with an EMEA hub in Dublin (120 FTE, GDPR + UK-facing) and an
+# APAC growth office in Singapore (35 FTE, covering ANZ, India and Southeast
+# Asia). Lumalynx is preparing to launch "Lumalynx Tutor 3.0" in May 2026 —
+# the first version with a generative-AI-powered adaptive math engine. The
+# launch is co-branded with KnowGraph, an education content partner that
+# licenses curriculum-aligned problem sets. In late March 2026, investigative
+# journalists at The Verge published allegations that KnowGraph's problem
+# sets include material scraped from copyrighted textbook publishers without
+# license — which has triggered a brand crisis for Lumalynx by association.
+# Simultaneously, the annual LumaSummit user conference (1,400 attendees,
+# Chicago, scheduled July 14-16) lost its primary AV/production vendor after
+# the vendor filed for bankruptcy in mid-March, forcing a full replan. The
+# content team is also mid-way through a rebrand from the original "Lumalynx
+# Tutor" product name to "Lumalynx Learn" to align with a new umbrella brand
+# architecture — a rebrand that requires a 2,400-URL SEO migration. FTC has
+# been aggressive about AI efficacy claims in edtech (three consent decrees
+# against competitors in the last 18 months), so every outcome claim (e.g.
+# "raises math scores 38%") must pass legal review before publication.
+# =============================================================================
+
+organization:
+  name: Lumalynx Learning
+  industry: Consumer + B2B Edtech (K-12 AI Tutoring)
+  stage: Series C (post-$72M raise, June 2024)
+  revenue: "$94M ARR (60% Home consumer subs, 40% Classroom district contracts)"
+  headcount: 640
+  hq: San Francisco, CA (Mission Bay)
+  additional_sites:
+    - Dublin, Ireland (EMEA HQ, 120 FTE — marketing, support, Gaeilge localization)
+    - Singapore (APAC growth office, 35 FTE — covering ANZ, India, SEA)
+    - Remote US (approx 110 FTE across 28 states)
+  fiscal_year_end: December 31
+  flagship_launch: "Lumalynx Tutor 3.0 (rebranding to 'Lumalynx Learn') — May 12, 2026"
+  annual_conference: "LumaSummit 2026 — Chicago, July 14-16 (1,400 attendees, educators + district buyers + parents)"
+  key_partner_under_scrutiny: KnowGraph Education (curriculum content licensing partner, named in The Verge investigation March 27, 2026)
+  primary_tools:
+    marketing_automation: HubSpot Marketing Hub Enterprise (lead nurture, email, landing pages)
+    crm: Salesforce Sales Cloud (shared with Sales org)
+    abm: 6sense (intent data, account scoring) + Demandbase One (orchestration)
+    cms: Contentful (marketing site) + WordPress VIP (blog/resource center, 1,200+ posts)
+    web_analytics: GA4 + Amplitude (product-led signals) + Hotjar (session replay)
+    seo: Ahrefs (primary), Semrush (secondary), Screaming Frog (crawl/audit), Google Search Console
+    ad_platforms: Google Ads, Meta Ads, TikTok Ads Manager, LinkedIn Campaign Manager, Reddit Ads
+    events: Cvent (registration + onsite), Bizzabo (mobile app + agenda), Hopin (virtual overflow)
+    pr_media: Muck Rack (media database + outreach), Cision (monitoring), Meltwater (social listening)
+    social: Sprout Social (scheduling + analytics), Brandwatch (listening)
+    creative: Figma, Frontify (brand portal + asset DAM), Adobe Creative Cloud
+    project_mgmt: Asana (marketing team of record), Airtable (editorial calendar)
+    communication: Slack (primary), Gmail/Google Workspace, Zoom, Loom
+    docs: Google Workspace (Docs, Slides, Sheets), Notion (wikis + launch playbooks)
+    legal_workflow: DocuSign CLM (claims review, contracts, partner agreements)
+    competitive_intel: Klue
+  regulatory_context:
+    - FTC Act Section 5 (deceptive/unfair advertising; AI efficacy claims; endorsement & testimonial guides)
+    - COPPA (Children's Online Privacy Protection Act — core to K-12 audience)
+    - FERPA (student records handled via Classroom product)
+    - GDPR + UK GDPR (Dublin/London consumer acquisition + ABM processing)
+    - CCPA/CPRA (California consumer audience)
+    - ASA (UK Advertising Standards Authority) — Dublin team ships UK creative
+  current_pressures:
+    - Lumalynx Tutor 3.0 launch slipped from April 28 to May 12 due to an eng bug in the adaptive engine (announced March 24)
+    - KnowGraph brand crisis (The Verge story March 27, 2026) — parent refund requests spiking
+    - LumaSummit AV vendor (StagePro Events) filed Chapter 7 March 18, 2026 — $340K deposit at risk
+    - Rebrand "Lumalynx Tutor → Lumalynx Learn" + 2,400-URL SEO migration, cutover May 5
+    - Top-20 ABM program ("Project Lighthouse") targeting large US districts is in quarter 2 of 4
+    - Board wants CAC payback under 14 months; currently 17 months and rising
+
+# =============================================================================
+# PERSONAS (14)
+# =============================================================================
+
+personas:
+
+  # ---------------------------------------------------------------------------
+  # 1. Marguerite "Margo" Delacroix-Hollis — Chief Marketing Officer
+  # ---------------------------------------------------------------------------
+  - id: margo_delacroix
+    name: Marguerite "Margo" Delacroix-Hollis
+    role: Chief Marketing Officer
+    reports_to: null  # Reports to CEO Raj Venkataraman (not in persona set)
+    age: 49
+    location: San Francisco, CA
+    timezone: America/Los_Angeles
+    availability:
+      working_hours: "07:00–19:00 PT"
+      slack_responsiveness: "reads everything; writes sparingly; responds to DMs within 90 minutes during working hours"
+      after_hours: "reachable via text for CEO/board/crisis matters only; disconnects Friday 19:00 PT through Sunday 09:00 PT"
+      unavailable_days: []
+      hard_block: "Tuesday 13:00–17:00 PT is a standing board-prep block every week (non-movable unless CEO intervenes)"
+      travel: "4-5 days/month, mostly NYC (press), Dublin (EMEA reviews), and district-buyer dinners"
+    background:
+      education:
+        - degree: BA Comparative Literature
+          institution: Wellesley College
+        - degree: MBA (Marketing + Strategy)
+          institution: Kellogg School of Management, Northwestern
+      career:
+        - role: Brand Manager → Senior Brand Manager
+          company: Procter & Gamble (Cincinnati)
+          duration: "5 years"
+          note: "Cut her teeth on Tide and Pampers; still instinctively frames every campaign as 'who is the mom we're talking to at 9pm on a Tuesday.'"
+        - role: Director of Brand Marketing
+          company: Warby Parker
+          duration: "4 years"
+          note: "Led the 'Home Try-On' campaign relaunch. Learned how to build a category from a brand."
+        - role: VP Marketing
+          company: Chegg
+          duration: "4 years"
+          note: "Her first edtech role. Navigated the COVID enrollment boom and the subsequent 2022 crash. 'I have scars from the 2022 earnings call.'"
+        - role: SVP Global Marketing
+          company: Kaplan Education
+          duration: "3 years"
+          note: "Ran a 180-person global marketing org across 6 brands. Left after a restructuring eliminated her role."
+        - role: Chief Marketing Officer
+          company: Lumalynx Learning
+          duration: "22 months (current)"
+          note: "Hired to professionalize a founder-led marketing org. Built the brand architecture work that the current rebrand executes against."
+    communication_style:
+      email:
+        tone: measured, executive, narrative-led
+        formatting: "Opens with a 2-3 sentence framing paragraph ('The story we're telling this quarter is...'). Uses em dashes liberally. Never writes more than 4 short paragraphs."
+        signature: "Margo Delacroix-Hollis | CMO, Lumalynx Learning | she/her"
+        quirk: "Refuses to use exclamation points in written communication. 'If it needs an exclamation point, the sentence isn't working.'"
+      slack:
+        behavior: "Posts in #marketing-leadership and #brand-review only. Uses emoji reactions (thumbsup, eyes, 100) in lieu of replies 80% of the time. Will DM you directly if she has a real question."
+        response_time: "90 minutes for DMs; hours for channel posts"
+        pet_peeve: "People who @ her in channels to 'FYI' her on things she doesn't need to action."
+      meetings:
+        behavior: "Arrives 2 minutes early to every meeting. Camera always on. Takes zero notes in the room — an EA (Beatriz) takes them. Asks one precise question at the 20-minute mark that reveals whether the presenter has done their homework."
+        verbal_tic: "'Walk me through the mom at 9pm on a Tuesday.' and 'What's the one sentence?'"
+        presentation_style: "Minimal slides. Her decks are 6-8 slides max with enormous typography. She does not use bullet points in her own decks."
+    decision_making:
+      style: brand-first, consumer-insight validated, selectively data-challenged
+      pattern: "Trusts qualitative consumer insight and 25 years of pattern recognition. Will ask for data to validate, not to decide. Makes big calls in 24-48 hours once she has enough signal."
+      speed: "Fast on brand/creative calls; slower on structural org decisions (will stew for weeks)."
+      escalation_trigger: "Escalates to CEO when spend commitment exceeds $500K or when a press statement mentions the board."
+    kpis:
+      - metric: Blended CAC Payback Period
+        target: "< 14 months"
+      - metric: Brand Aided Awareness (US parent audience)
+        target: "32%"
+      - metric: Marketing-Sourced Pipeline (Classroom segment)
+        target: "$28M/quarter"
+      - metric: NPS (Lumalynx Home)
+        target: "> 55"
+      - metric: Share of Voice vs Khan Academy + Chegg
+        target: "> 18%"
+    pain_points:
+      - "Founder-CEO Raj still weighs in on creative directly — sometimes at 11pm Slack messages asking to change headlines."
+      - "Sales leadership (Connor Yazzie) publicly blames 'marketing lead quality' every QBR while private Clari data shows sourced-lead win rate is higher than rep-sourced."
+      - "The KnowGraph partnership was championed by the CEO — she inherited it and can't cleanly unwind it mid-crisis."
+    relationships:
+      priyanka_shah: "Her right hand on the launch; Margo trusts Priyanka's product-marketing judgment more than any single person on the team."
+      tomasz_wojcik: "Protective of him — she knows brand is where careers get made. Runs interference when the CEO second-guesses creative."
+      fiona_breathnach: "Long-distance rapport. Reviews every Europe-facing press statement personally; trusts Fiona's instincts on tone."
+      connor_yazzie: "Professional, privately cold. She thinks he 'uses marketing as an excuse for a missed number' — but would never say so publicly."
+      devika_raghunathan: "Margo pushes her hard on FTC compliance; respects Devika absolutely and never overrides her."
+      raj_venkataraman: "CEO (not in persona set) — loyal but exhausted by his late-night creative interventions."
+      beatriz_serrano_costa: "Her EA — the only person with write access to her calendar besides the CEO."
+    tools_used:
+      - Slack (DMs + 4 channels only)
+      - Gmail
+      - Google Slides
+      - Figma (view-only — she comments in threads)
+      - Frontify
+      - Notion (reads, never writes)
+      - Klue (exec digest)
+    blind_spots:
+      - "Over-trusts consumer intuition over Classroom segment data — she has never sold to a school district and it shows in K-12 strategy debates."
+      - "Her 'no exclamation points' rule bleeds into team culture in a way that makes junior marketers feel their enthusiasm is unprofessional."
+      - "Will protect Tomasz's creative vision even when timelines demand compromise — the team can't tell her 'no' to him."
+    triggers:
+      - "any phrase that implies we're 'selling a miracle' in AI efficacy"
+      - "the word 'hack' in marketing copy (she banned it in 2024)"
+      - "press statements drafted without Devika in the loop"
+    preferred_channel: email
+    banned_channels: []
+
+  # ---------------------------------------------------------------------------
+  # 2. Priyanka Shah — VP Product Marketing
+  # ---------------------------------------------------------------------------
+  - id: priyanka_shah
+    name: Priyanka Shah
+    role: VP Product Marketing
+    reports_to: margo_delacroix
+    age: 38
+    location: Oakland, CA
+    timezone: America/Los_Angeles
+    availability:
+      working_hours: "08:30–18:00 PT"
+      slack_responsiveness: "within 20 minutes during working hours"
+      after_hours: "checks Slack until 21:00 PT for launch-critical threads; hard boundary on weekends (has two children under 6)"
+      unavailable_days: []
+      recurring_block: "Thursdays 15:00–17:00 PT is her 'no meetings, writing time' block — enforces it ruthlessly"
+    background:
+      education:
+        - degree: BS Cognitive Science
+          institution: University of California, Berkeley
+        - degree: MBA
+          institution: Haas School of Business, UC Berkeley
+      career:
+        - role: Associate Product Manager
+          company: Google (Android Education)
+          duration: "2 years"
+          note: "Shipped Google Classroom v1 features. Still has a soft spot for Chromebook-first design."
+        - role: Senior PMM → Group PMM
+          company: Duolingo
+          duration: "5 years"
+          note: "Led PMM for the gamified streaks feature. Famous inside Duo for the phrase 'positioning is a product decision.'"
+        - role: Head of Product Marketing
+          company: Outschool
+          duration: "3 years"
+          note: "Built PMM from 1 to 8. Navigated the 2022 consumer-edtech correction."
+        - role: VP Product Marketing
+          company: Lumalynx Learning
+          duration: "18 months (current)"
+          note: "Owns launches, competitive, pricing & packaging input, and sales enablement. Team of 9."
+    communication_style:
+      email:
+        tone: structured, evidence-led, warm
+        formatting: "Uses three-part structure: Context / Ask / Risks. Every email ends with 'Happy to jump on a call if easier.'"
+        signature: "Priyanka Shah | VP Product Marketing | Lumalynx Learning | she/her"
+        quirk: "Will not send a launch-related email without attaching the launch RACI as a link."
+      slack:
+        behavior: "Very active in #gtm-launch, #pmm-team, #competitive-intel. Uses threads obsessively — will reply in-thread and then post a summary in channel."
+        response_time: "< 20 minutes"
+        pet_peeve: "People who DM her questions that belong in #gtm-launch where others can benefit."
+      meetings:
+        behavior: "Always has a pre-read. Always has a written agenda. Starts meetings with 'What's the decision we need to leave this room with?'"
+        verbal_tic: "'Positioning is a product decision.' and 'What's the one thing?'"
+        presentation_style: "Narrative slides with a single headline per page and a proof point. Borrows Duolingo's storytelling rhythm."
+    decision_making:
+      style: framework-driven, collaborative, evidence-led
+      pattern: "Builds a one-pager for every significant decision, circulates it, takes 48 hours of async input, then decides. Will not decide in the meeting — 'the meeting is to gather signal, the decision comes after.'"
+      speed: "Moderate. 2-3 day cycles for most calls. Fast only on tactical launch mechanics."
+      escalation_trigger: "Escalates to Margo when a launch slip threatens a board-committed date or when legal and product disagree on a claim."
+    kpis:
+      - metric: Launch Readiness Score (internal rubric, 10 dimensions)
+        target: "> 8.5/10 at T-7 days"
+      - metric: Sales Enablement Asset Usage
+        target: "> 65% of AEs touching launch kit weekly"
+      - metric: Competitive Win Rate vs Khan Academy (Classroom segment)
+        target: "> 42%"
+      - metric: Launch NPS (internal, surveyed 30 days post-launch)
+        target: "> 7/10"
+    pain_points:
+      - "Product (Linh Ng-Prasetyo's org) changes launch scope with less than 2 weeks notice — happened twice in 2025."
+      - "Sales enablement adoption is a constant uphill fight; Connor's team treats PMM assets as 'nice to have.'"
+      - "Her team is spread across launches, competitive, pricing — she has asked for a 10th hire for 7 months and been denied."
+    relationships:
+      margo_delacroix: "Direct manager and biggest champion. Margo hired her personally."
+      linh_ng_prasetyo: "Her counterpart in Product. Good professional rapport, tension on scope-change notice. They do a standing Monday 1:1 at 09:00 PT."
+      tomasz_wojcik: "Creative partner on launch campaigns. Sometimes clashes when his brand instinct wants to hide the product detail she wants to feature."
+      devika_raghunathan: "Frequent collaborator. Priyanka submits every efficacy claim through Devika's DocuSign workflow."
+      kofi_asante: "Runs launch demand gen with him; they're a well-oiled pair."
+      connor_yazzie: "Professional tension. He thinks PMM is 'slide factories'; she thinks sales enablement adoption is a leadership problem."
+      amelia_brightwood: "Loops her in early on launch narratives that will need analyst validation."
+    tools_used:
+      - Slack
+      - Notion (primary writing surface)
+      - Figma
+      - Google Slides
+      - Gong (competitive call review)
+      - Klue
+      - Asana
+      - Amplitude
+      - DocuSign CLM (claims workflow)
+    blind_spots:
+      - "Her framework obsession sometimes slows down decisions that would benefit from a gut call."
+      - "She under-weights TikTok/Reddit qualitative signal in favor of structured survey data."
+      - "Treats launches as the 'serious' work and sometimes under-invests in ongoing positioning maintenance."
+    triggers:
+      - "the phrase 'can we just ship it without the PMM asset'"
+      - "scope changes inside T-14 days"
+      - "unreviewed efficacy claims appearing in sales decks"
+    preferred_channel: slack
+    banned_channels: []
+
+  # ---------------------------------------------------------------------------
+  # 3. Tomasz Wojcik — Creative Director
+  # ---------------------------------------------------------------------------
+  - id: tomasz_wojcik
+    name: Tomasz Wojcik
+    role: Creative Director
+    reports_to: margo_delacroix
+    age: 44
+    location: Brooklyn, NY
+    timezone: America/New_York
+    availability:
+      working_hours: "10:00–19:00 ET (shifted — he is not a morning person)"
+      slack_responsiveness: "variable; 30-90 minutes during working hours; ignores Slack during 'deep work' afternoons"
+      after_hours: "often online late creating mood boards; will not respond to work before 10:00 ET no matter what"
+      unavailable_days: []
+      note: "Takes the first Friday of every month off for a museum/gallery day — calls it 'input time.'"
+    background:
+      education:
+        - degree: BFA Graphic Design
+          institution: Akademia Sztuk Pięknych w Warszawie (Academy of Fine Arts, Warsaw)
+        - degree: MFA Visual Communication
+          institution: Yale School of Art
+      career:
+        - role: Junior Designer → Senior Designer
+          company: Pentagram (NYC office)
+          duration: "4 years"
+          note: "Worked under Paula Scher's team. Still describes it as 'art school with a paycheck.'"
+        - role: Design Director
+          company: Wieden+Kennedy (Portland then NYC)
+          duration: "5 years"
+          note: "Led the creative for a Nike Kids campaign that won a Cannes Silver Lion."
+        - role: Executive Creative Director
+          company: Red Antler (brand agency)
+          duration: "4 years"
+          note: "Led brand launches for 12+ DTC startups including two edtech brands."
+        - role: Creative Director
+          company: Lumalynx Learning
+          duration: "16 months (current)"
+          note: "Brought in by Margo to lead the brand architecture work and the Lumalynx Learn rebrand."
+    communication_style:
+      email:
+        tone: evocative, allusive, sometimes aphoristic
+        formatting: "Short emails. Image-heavy. Will often reply with a single image or Figma link and no words."
+        signature: "Tomasz Wojcik | Creative Director, Lumalynx | he/him | 'Make it true, then make it beautiful.'"
+        quirk: "Quotes designers and writers in signature blocks, rotates monthly. Recently: Massimo Vignelli, Jenny Holzer, Ursula K. Le Guin."
+      slack:
+        behavior: "Posts screenshots, Figma frames, and reference images in #creative-review and #brand-architecture. Uses custom emoji he commissioned himself."
+        response_time: "Variable — 30 to 90 minutes"
+        pet_peeve: "Getting creative feedback via Slack bullet points instead of voice or comments on the Figma file itself."
+      meetings:
+        behavior: "Walks into meetings with an iPad Pro and an Apple Pencil; sketches while others talk. People find this disconcerting until they realize he's actually paying attention. Speaks slowly, chooses words deliberately."
+        verbal_tic: "'Let me sit with that.' and 'What does this *feel* like?' (always emphasizing 'feel')"
+        presentation_style: "Shows work on a cinema-width Figma frame. Zero slides. Narrates as he walks through it."
+    decision_making:
+      style: intuitive, craft-led, resistant to compromise
+      pattern: "Will argue passionately for creative integrity; can dig in hard on brand consistency. Comes around after 24 hours if the business case is strong."
+      speed: "Slow to start, fast once inspired. Needs the 'big idea' before he can move on executional details."
+      escalation_trigger: "Escalates to Margo when a stakeholder demands a creative change he considers 'brand-breaking.'"
+    kpis:
+      - metric: Brand Consistency Score (Frontify asset compliance audit)
+        target: "> 92%"
+      - metric: Creative Team CSAT (quarterly internal survey)
+        target: "> 4.2/5"
+      - metric: Campaign Recall (measured via brand lift studies)
+        target: "> 28%"
+    pain_points:
+      - "The CEO bypasses him directly to give creative feedback on Friday nights."
+      - "Rebrand work is being rushed to meet SEO migration date — 'we are building the plane while flying it, and the plane is also the brand.'"
+      - "Sales team uses non-branded PowerPoint templates they found on Google; he has tried and failed to enforce Frontify compliance 4 times."
+    relationships:
+      margo_delacroix: "Creative soulmate. She hired him specifically to build a real brand system and defends him reflexively."
+      priyanka_shah: "Productive tension. He respects her rigor; she respects his craft. They argue well."
+      sunita_kaur_gill: "His editorial counterpart. They co-own the rebrand execution and are in each other's Figma files daily."
+      fiona_breathnach: "He adores her — she speaks fluent design at him and runs a tight EMEA brand shop."
+      devika_raghunathan: "Distant but polite. He finds her edits 'flatten the poetry' but accepts they are non-negotiable."
+      beatriz_serrano_costa: "Beatriz manages his chaos on Margo's behalf."
+    tools_used:
+      - Figma (primary habitat)
+      - Frontify (brand portal owner)
+      - Adobe Creative Cloud (Illustrator, After Effects)
+      - Slack (reluctantly)
+      - Loom (for creative walkthroughs)
+      - Notion (reads, almost never writes)
+    blind_spots:
+      - "Underestimates how much the sales org needs templated, mediocre, easy-to-use assets vs pristine custom ones."
+      - "Treats the Lumalynx Classroom segment as aesthetically secondary to consumer Home."
+      - "Pushes back on legal edits as a reflex even when the claim is genuinely unsupported."
+    triggers:
+      - "stock photography in brand-facing work"
+      - "the word 'assets' used as a substitute for 'work'"
+      - "last-minute CEO creative rewrites"
+    preferred_channel: slack  # but really Figma comments
+    banned_channels: []
+
+  # ---------------------------------------------------------------------------
+  # 4. Fiona Ní Bhreathnach — Director of Brand & PR, EMEA
+  # ---------------------------------------------------------------------------
+  - id: fiona_breathnach
+    name: Fiona Ní Bhreathnach
+    role: Director of Brand & PR, EMEA
+    reports_to: margo_delacroix
+    age: 41
+    location: Dublin, Ireland
+    timezone: Europe/Dublin
+    availability:
+      working_hours: "09:00–17:00 GMT/IST (HARD boundary — Ireland's Right to Disconnect code applies)"
+      slack_responsiveness: "within 25 minutes during working hours"
+      after_hours: "does not respond to non-emergency Slack or email outside working hours; will respond to PR crisis calls on her mobile"
+      unavailable_days: []
+      hard_boundary: "Will not take US meetings after 17:00 IST. Dublin team operates 09:00-17:00 IST only; the 3-hour overlap window with SF is 09:00-12:00 PT."
+      school_runs: "Blocks 08:30-09:00 and 15:30-16:00 IST for school run — visible on calendar"
+    background:
+      education:
+        - degree: BA Journalism & Irish (Gaeilge)
+          institution: Dublin City University
+        - degree: MSc Strategic Communications
+          institution: London School of Economics
+      career:
+        - role: Reporter → News Editor
+          company: The Irish Times
+          duration: "5 years"
+          note: "Covered Irish politics and education policy. Still has sources in the Department of Education."
+        - role: Senior Communications Manager
+          company: RTÉ (Irish public broadcaster)
+          duration: "3 years"
+          note: "Managed communications around two parliamentary inquiries."
+        - role: Head of Corporate Communications, EMEA
+          company: Stripe (Dublin)
+          duration: "5 years"
+          note: "Ran European PR through Stripe's hypergrowth. Learned how to run a crisis comms playbook under time pressure."
+        - role: Director of Brand & PR, EMEA
+          company: Lumalynx Learning
+          duration: "14 months (current)"
+          note: "Built the Dublin marketing function from 3 to 12 people. Owns all EMEA press, brand, and educator relations."
+    communication_style:
+      email:
+        tone: precise, diplomatic, carefully constructed
+        formatting: "Formal salutation ('Dear Margo, Priyanka,' — uses commas, not colons). Clear subject lines. One topic per email."
+        signature: "Fiona Ní Bhreathnach | Director, Brand & PR EMEA | Lumalynx Learning | Dublin | +353 1 555 0198"
+        quirk: "Occasionally signs off in Gaeilge with close colleagues: 'Slán go fóill' (goodbye for now) or 'Go raibh maith agat' (thank you)."
+      slack:
+        behavior: "Uses Slack sparingly. Prefers email for anything substantive. Strict about not posting in channels outside her working hours to 'model the behaviour.'"
+        response_time: "< 25 minutes within 09:00-17:00 IST"
+        pet_peeve: "US colleagues who assume she'll be online for a 17:30 PT meeting — '01:30 IST is not a meeting time.'"
+      meetings:
+        behavior: "Always prepared. Takes handwritten notes in a Leuchtturm1917 notebook. Will diplomatically correct factual errors mid-meeting."
+        verbal_tic: "'That's a lovely idea, and —' (the 'and' is always where the objection lives) and 'What does the record say?'"
+        presentation_style: "Classic journalism-trained: lead with the news, back into the supporting facts."
+    decision_making:
+      style: source-driven, reputation-weighted, cautious
+      pattern: "Runs every PR decision through 'how does this read in The Guardian in 6 months?' Will not approve a statement without two independent factual confirmations."
+      speed: "Fast in a crisis (hours). Deliberate in steady-state (days)."
+      escalation_trigger: "Escalates to Margo when a story threatens to involve the CEO directly or implicates KnowGraph beyond what has already been reported."
+    kpis:
+      - metric: Share of Voice (EMEA parent press)
+        target: "> 14%"
+      - metric: Tier-1 Press Placements per Quarter
+        target: "8"
+      - metric: Crisis Response Time (first holding statement)
+        target: "< 2 hours from story breaking"
+      - metric: EMEA Brand Sentiment (Brandwatch)
+        target: "> 65% positive"
+    pain_points:
+      - "US team frequently ships statements without Dublin review; UK ASA rules are different from FTC and things slip through."
+      - "KnowGraph crisis broke on a US timezone and the first Lumalynx holding statement went out before she saw it — she was furious."
+      - "Limited budget for a proper Dublin press breakfast program."
+    relationships:
+      margo_delacroix: "Mutual deep respect. Weekly Tuesday 09:00 PT / 17:00 IST 1:1 that never gets canceled."
+      tomasz_wojcik: "Creative allies across timezones. She protects his work from local-market compromise."
+      devika_raghunathan: "Fiona is scrupulous about legal review, which Devika appreciates. They rarely disagree."
+      priyanka_shah: "Good working rapport. Fiona pushes her on EMEA launch localization."
+      aanya_iyer: "Runs ABM comms alongside her for EMEA targets; Aanya relies on Fiona for press relationships with education trade media."
+      seán_ó_riordáin: "Her external PR agency counterpart at Whitefield Communications."
+    tools_used:
+      - Muck Rack (media contacts)
+      - Cision (monitoring)
+      - Meltwater
+      - Brandwatch
+      - Gmail (primary)
+      - Slack
+      - Google Docs
+      - Notion
+    blind_spots:
+      - "Her hard working-hours boundary, while healthy, can delay US-driven crisis responses by 8-12 hours."
+      - "Tendency to assume US team is being sloppy when they're actually operating on a faster clock."
+      - "Under-invests in APAC press coverage because she is stretched across UK, Ireland, Germany, France, Nordics."
+    triggers:
+      - "US press statements issued without Dublin review"
+      - "the phrase 'let's just ship it, we'll fix it in EMEA later'"
+      - "conflating UK and EU regulatory regimes"
+    preferred_channel: email
+    banned_channels: []
+
+  # ---------------------------------------------------------------------------
+  # 5. Kofi Asante — Director of Demand Generation
+  # ---------------------------------------------------------------------------
+  - id: kofi_asante
+    name: Kofi Asante
+    role: Director of Demand Generation
+    reports_to: margo_delacroix
+    age: 35
+    location: Austin, TX
+    timezone: America/Chicago
+    availability:
+      working_hours: "08:00–18:00 CT"
+      slack_responsiveness: "< 15 minutes during working hours"
+      after_hours: "monitors #paid-media-alerts for ad-spend anomalies until 22:00 CT"
+      unavailable_days: []
+    background:
+      education:
+        - degree: BSc Business Administration (Marketing)
+          institution: University of Ghana, Legon
+        - degree: MS Marketing Analytics
+          institution: University of Texas at Austin
+      career:
+        - role: Performance Marketing Analyst
+          company: Jumia (Lagos → Accra)
+          duration: "2 years"
+          note: "Learned growth marketing in a market where every dollar mattered. Still runs his paid-media forecasts in Google Sheets because 'the tools lie and Sheets tell the truth.'"
+        - role: Senior Growth Marketing Manager
+          company: Rocket Internet portfolio (Berlin, remote)
+          duration: "2 years"
+          note: "Ran acquisition across three consumer brands simultaneously."
+        - role: Head of Paid Acquisition
+          company: Masterclass
+          duration: "4 years"
+          note: "Scaled Masterclass's Meta spend from $2M/month to $14M/month. Rode the 2022 CPM spike that broke consumer DTC."
+        - role: Director of Demand Generation
+          company: Lumalynx Learning
+          duration: "19 months (current)"
+          note: "Owns paid acquisition (Home consumer), lead gen (Classroom B2B), lifecycle email, and marketing ops. Team of 11."
+    communication_style:
+      email:
+        tone: data-forward, brisk, numerate
+        formatting: "Leads with the number. 'CAC is $87 this week, up 14% WoW. Here's why: [bullets]. Here's what I'm doing: [bullets]. ETA to stable: Friday.'"
+        signature: "Kofi Asante | Director of Demand Gen | Lumalynx Learning"
+        quirk: "Always includes the week-over-week delta in parentheses next to any metric."
+      slack:
+        behavior: "Runs #paid-media, #lifecycle-email, #marketing-ops. Posts daily 'Kofi's Dashboard' screenshot at 09:00 CT. Uses emojis to signal trend direction."
+        response_time: "< 15 minutes"
+        pet_peeve: "People who ask 'how are numbers looking?' without specifying a metric or a timeframe."
+      meetings:
+        behavior: "Brings a dashboard, not a deck. Talks fast. Asks 'what's the hypothesis?' before anyone shows him a chart."
+        verbal_tic: "'What's the hypothesis?' and 'Correlation isn't causation, but correlation is where we start looking.'"
+        presentation_style: "Live-queries his dashboards in Amplitude and Looker during meetings."
+    decision_making:
+      style: data-maximalist, hypothesis-driven, fast-iteration
+      pattern: "Forms a hypothesis, sets a budget cap and a success metric, ships the test, reads results, decides in 3-7 day cycles."
+      speed: "Very fast — happiest with small decisions every day."
+      escalation_trigger: "Escalates to Margo when a single-week spend decision exceeds $250K or when attribution data disagrees with finance's LTV model."
+    kpis:
+      - metric: Blended CAC (Home consumer)
+        target: "< $72"
+        current: "$87"
+      - metric: Marketing-Sourced Pipeline (Classroom)
+        target: "$28M/quarter"
+      - metric: Email Deliverability
+        target: "> 98%"
+      - metric: Lifecycle Revenue per Active User
+        target: "+12% YoY"
+      - metric: Paid Media ROAS
+        target: "> 2.8x blended"
+    pain_points:
+      - "Amplitude event tracking has been broken in three places for 5 weeks and product engineering hasn't prioritized fixes."
+      - "Finance (Suresh's team) calculates LTV differently than marketing does; quarterly ROAS debates drain hours."
+      - "Sales team floods SDRs with low-fit MQLs and blames marketing for lead quality."
+    relationships:
+      margo_delacroix: "Loyal lieutenant. She gives him rope because his numbers are clean."
+      priyanka_shah: "Launch partner. They run launch demand gen as a joint operation."
+      aanya_iyer: "Kofi owns broad demand gen; Aanya owns the top-20 ABM motion. They share ops resources and fight politely over attribution."
+      yuki_tanaka_hendricks: "His marketing ops lead. He would be lost without her — says so openly."
+      connor_yazzie: "Productive friction. They share a KPI (pipeline) but disagree on attribution. Meet every Wednesday 14:00 CT."
+      devika_raghunathan: "All paid creative with efficacy language flows through Devika. Kofi is one of the best at pre-clearing claims."
+      suresh_nair: "Tension. They argue weekly about LTV and CAC payback formulas."
+    tools_used:
+      - HubSpot Marketing Hub (email, automation)
+      - Google Ads, Meta Ads, TikTok Ads, LinkedIn, Reddit Ads
+      - Amplitude
+      - GA4
+      - Looker Studio
+      - Google Sheets (his actual decision surface)
+      - Slack
+      - Salesforce (reporting only)
+    blind_spots:
+      - "Over-trusts last-click attribution; under-values brand spend his numbers can't credit."
+      - "Treats Classroom B2B as a performance-marketing problem when it's really a relationship sale."
+      - "Moves so fast that he sometimes ships creative that hasn't seen Devika's legal review."
+    triggers:
+      - "the phrase 'brand spend is hard to measure, just do more of it'"
+      - "attribution debates with no agreed-upon model"
+      - "tracking pixels removed without notification"
+    preferred_channel: slack
+    banned_channels: []
+
+  # ---------------------------------------------------------------------------
+  # 6. Aanya Iyer — ABM Program Manager
+  # ---------------------------------------------------------------------------
+  - id: aanya_iyer
+    name: Aanya Iyer
+    role: ABM Program Manager (Top-20 District Accounts)
+    reports_to: kofi_asante
+    age: 31
+    location: Chicago, IL
+    timezone: America/Chicago
+    availability:
+      working_hours: "08:30–17:30 CT"
+      slack_responsiveness: "< 20 minutes during working hours"
+      after_hours: "checks Slack until 20:00 CT for account-specific threads"
+      unavailable_days: []
+    background:
+      education:
+        - degree: B.Com (Honours)
+          institution: Shri Ram College of Commerce, University of Delhi
+        - degree: MS Integrated Marketing Communications
+          institution: Medill School of Journalism, Northwestern University
+      career:
+        - role: Demand Generation Associate
+          company: Freshworks (Chennai)
+          duration: "2 years"
+          note: "First exposure to B2B SaaS marketing. Learned the motion end-to-end on a shoestring budget."
+        - role: ABM Campaign Manager
+          company: Salesforce (Chicago)
+          duration: "3 years"
+          note: "Ran named-account programs for Education Cloud. Built the playbook she's now adapting at Lumalynx."
+        - role: Senior ABM Manager
+          company: Discovery Education
+          duration: "3 years"
+          note: "Specialized in district-buyer marketing. Knows the superintendent and procurement personas cold."
+        - role: ABM Program Manager
+          company: Lumalynx Learning
+          duration: "11 months (current)"
+          note: "Runs 'Project Lighthouse' — the top-20 US district ABM program. $2.4M program budget."
+    communication_style:
+      email:
+        tone: warm, relationship-led, organized
+        formatting: "Per-account update emails follow a strict template: Account / Stage / This Week / Blockers / Next Step / Owner. She enforces it across the team."
+        signature: "Aanya Iyer | ABM Program Manager | Lumalynx Learning | she/her"
+        quirk: "Uses account codenames (never real district names) in any email that isn't in a restricted folder — GDPR and competitive discipline."
+      slack:
+        behavior: "Runs #project-lighthouse (private). Shares a weekly 'Lighthouse Lens' update every Friday 15:00 CT."
+        response_time: "< 20 minutes"
+        pet_peeve: "Sales reps who post account information in public channels."
+      meetings:
+        behavior: "Always has the per-account dashboard open. Will politely correct sales when their pipeline stage doesn't match her engagement data."
+        verbal_tic: "'What are we hearing from the buying committee?' and 'Who on our side has the relationship?'"
+        presentation_style: "Account-by-account walkthroughs with intent data overlay from 6sense."
+    decision_making:
+      style: relationship-weighted, data-validated, cross-functionally negotiated
+      pattern: "Builds account strategy in partnership with the named AE; will not make a unilateral move on an account without the AE in the loop."
+      speed: "Moderate — ABM is a long game."
+      escalation_trigger: "Escalates to Kofi when an AE refuses to execute the agreed ABM play or when 6sense intent data contradicts Salesforce stage by more than one stage."
+    kpis:
+      - metric: Top-20 Account Engagement Score (6sense)
+        target: "> 72"
+      - metric: Meetings Booked (named accounts)
+        target: "12/quarter"
+      - metric: Program-Influenced Pipeline
+        target: "$14M/quarter"
+      - metric: Account-Based Win Rate
+        target: "> 35%"
+    pain_points:
+      - "Salesforce account data is a mess — duplicate district records, mis-mapped parent/subsidiary hierarchies, missing superintendents. She has escalated twice with no fix."
+      - "The Salesforce–6sense sync broke for 11 days in February and nobody told her; she lost a quarter of engagement data."
+      - "AEs don't log district contact meetings, so her engagement model is blind to 30% of activity."
+    relationships:
+      kofi_asante: "Direct manager. Good working relationship; he gives her autonomy."
+      yuki_tanaka_hendricks: "Partners on every ABM ops ticket; Yuki has her back on data quality fights."
+      connor_yazzie: "Professional but cautious. She needs his sales team's cooperation and knows it."
+      hector_ramirez_delgado: "Her main sales-side ally — the strategic AE who owns 8 of the top-20 districts. They meet Tuesdays."
+      priyanka_shah: "Aanya feeds her Classroom positioning feedback from district buyers."
+      fiona_breathnach: "Her EMEA counterpart for any international ABM overflow."
+    tools_used:
+      - 6sense
+      - Demandbase One
+      - Salesforce
+      - HubSpot
+      - LinkedIn Sales Navigator + LinkedIn Campaign Manager
+      - Slack
+      - Google Sheets
+      - Airtable (account playbook tracker)
+    blind_spots:
+      - "Over-relies on 6sense intent signals when anonymous traffic can be noisy."
+      - "Sometimes treats AE pushback as a political problem when it's actually a data-quality problem."
+      - "Does not fully use the EMEA 6sense instance — she thinks of ABM as a US motion."
+    triggers:
+      - "duplicated district accounts in Salesforce"
+      - "AEs updating stage without logging meetings"
+      - "ABM treated as 'email targeting'"
+    preferred_channel: slack
+    banned_channels: []
+
+  # ---------------------------------------------------------------------------
+  # 7. Sunita Kaur Gill — Director of Content & Editorial
+  # ---------------------------------------------------------------------------
+  - id: sunita_kaur_gill
+    name: Sunita Kaur Gill
+    role: Director of Content & Editorial
+    reports_to: margo_delacroix
+    age: 42
+    location: Toronto, ON, Canada
+    timezone: America/Toronto
+    availability:
+      working_hours: "09:00–17:30 ET"
+      slack_responsiveness: "< 30 minutes during working hours"
+      after_hours: "mostly offline; will respond to publication-day issues"
+      unavailable_days: []
+      friday_block: "Friday mornings 09:00-12:00 ET are blocked for editorial calendar planning"
+    background:
+      education:
+        - degree: BA English Literature
+          institution: University of Toronto
+        - degree: MA Journalism
+          institution: Ryerson (now Toronto Metropolitan University)
+      career:
+        - role: Staff Writer → Senior Editor
+          company: The Walrus magazine
+          duration: "5 years"
+          note: "Edited long-form journalism. Still approaches content as editorial, not marketing."
+        - role: Content Strategy Lead
+          company: Shopify (Toronto)
+          duration: "4 years"
+          note: "Built Shopify's merchant education content hub. Learned how SEO and editorial can coexist."
+        - role: Head of Content
+          company: Top Hat (edtech, Toronto)
+          duration: "4 years"
+          note: "First edtech role. Built a content team of 9 writers, designers, and video producers."
+        - role: Director of Content & Editorial
+          company: Lumalynx Learning
+          duration: "20 months (current)"
+          note: "Owns the 1,200-post blog, resource center, curriculum content partnerships, and the rebrand to 'Lumalynx Learn' editorial voice."
+    communication_style:
+      email:
+        tone: thoughtful, literate, editorially precise
+        formatting: "Carefully edited prose. Uses the Oxford comma. Will occasionally rewrite her own sentences inline."
+        signature: "Sunita Kaur Gill | Director of Content & Editorial | Lumalynx Learning | she/her"
+        quirk: "Replies with structural feedback on emails that have grammatical errors ('minor: subject-verb agreement in paragraph 2')."
+      slack:
+        behavior: "Runs #editorial, #content-calendar, #rebrand-seo. Writes in complete sentences with proper punctuation even in Slack."
+        response_time: "< 30 minutes"
+        pet_peeve: "The word 'content' used as if it were interchangeable with 'marketing material.'"
+      meetings:
+        behavior: "Arrives with a printed one-page agenda. Takes notes in a fountain pen. Asks clarifying questions like an editor."
+        verbal_tic: "'What's the reader doing with this?' and 'That's a headline, not a sentence.'"
+        presentation_style: "Uses Google Docs with tracked changes rather than slides when possible."
+    decision_making:
+      style: editorial-judgment-led, SEO-informed, audience-centered
+      pattern: "Weighs editorial integrity heavily but has learned to balance against traffic targets. Will not publish something she thinks is beneath the brand even if it would rank."
+      speed: "Moderate. Editorial work has a natural rhythm."
+      escalation_trigger: "Escalates to Margo when a sponsored placement risks editorial independence or when a claim in a post isn't cleared by legal."
+    kpis:
+      - metric: Organic Traffic (blog + resource center)
+        target: "4.2M sessions/month"
+        current: "3.7M"
+      - metric: Content Engagement (avg time on page)
+        target: "> 3:20"
+      - metric: Content-Sourced MQLs
+        target: "1,400/quarter"
+      - metric: Editorial Quality Score (internal rubric)
+        target: "> 4.3/5"
+    pain_points:
+      - "The 'Lumalynx Tutor → Lumalynx Learn' rebrand requires rewriting 2,400 URLs and editing 1,200 posts; her team of 8 is stretched to breaking."
+      - "SEO team (Ollie) wants to kill 'underperforming' posts she considers part of the editorial canon."
+      - "Ahrefs data is sometimes 2-3 weeks stale and the team makes decisions on it anyway."
+    relationships:
+      margo_delacroix: "Respectful, slightly distant. Margo trusts her completely on editorial matters."
+      tomasz_wojcik: "Co-owner of the rebrand execution. They meet every Monday."
+      ollie_brennan: "Direct report. Creative and productive tension — he pushes for SEO optimization, she pushes for editorial integrity."
+      devika_raghunathan: "Sunita pre-clears any efficacy claim in content via DocuSign. She is conscientious about it."
+      priyanka_shah: "Collaborates on launch content and narrative."
+      fiona_breathnach: "Coordinates on UK editorial tone and Gaeilge/localized content."
+    tools_used:
+      - Contentful (marketing site)
+      - WordPress VIP (blog)
+      - Airtable (editorial calendar)
+      - Ahrefs, Semrush
+      - Google Docs
+      - Slack
+      - Notion
+      - Grammarly Business
+    blind_spots:
+      - "Under-values short, highly optimized SEO content that doesn't 'feel like real writing.'"
+      - "Can be precious about editorial decisions at the expense of speed."
+      - "Doesn't fully internalize how much the rebrand will cannibalize organic traffic in the short term."
+    triggers:
+      - "'let's just use AI to rewrite the backlog'"
+      - "killing evergreen content without author consultation"
+      - "SEO decisions made on stale data"
+    preferred_channel: email
+    banned_channels: []
+
+  # ---------------------------------------------------------------------------
+  # 8. Ollie Brennan — SEO Lead
+  # ---------------------------------------------------------------------------
+  - id: ollie_brennan
+    name: Ollie Brennan
+    role: SEO Lead
+    reports_to: sunita_kaur_gill
+    age: 28
+    location: Manchester, UK
+    timezone: Europe/London
+    availability:
+      working_hours: "09:00–17:30 GMT/BST"
+      slack_responsiveness: "< 20 minutes during working hours"
+      after_hours: "checks Search Console alerts until 21:00 GMT on days near a migration"
+      unavailable_days: []
+    background:
+      education:
+        - degree: BA Digital Media
+          institution: University of Manchester
+        - certification: "Advanced Technical SEO (Distilled/Brainlabs)"
+      career:
+        - role: Junior SEO Executive
+          company: Jellyfish Agency (Manchester)
+          duration: "2 years"
+          note: "Cut his teeth on e-commerce migrations. Has been through 14 full SEO migrations — calls it 'my misspent youth.'"
+        - role: SEO Manager
+          company: MoneySuperMarket
+          duration: "3 years"
+          note: "Ran SEO for a site with 400K+ URLs. Learned to love a good log-file audit."
+        - role: Senior SEO Strategist
+          company: Babbel (remote from UK)
+          duration: "2 years"
+          note: "First edtech experience; learned that education SERPs have different intent patterns."
+        - role: SEO Lead
+          company: Lumalynx Learning
+          duration: "13 months (current)"
+          note: "Owns organic search strategy, technical SEO, and the upcoming rebrand URL migration (2,400 URLs, cutover May 5)."
+    communication_style:
+      email:
+        tone: enthusiastic, technical, slightly nerdy
+        formatting: "Includes graphs from Ahrefs or Search Console in-line. Uses bullet points heavily."
+        signature: "Ollie Brennan | SEO Lead | Lumalynx Learning | he/him | Manchester, UK"
+        quirk: "Refers to Google crawlers as 'the bots' and sometimes personifies them: 'the bots were confused by this redirect chain.'"
+      slack:
+        behavior: "Very active in #rebrand-seo, #content-calendar. Posts Search Console screenshots multiple times per day."
+        response_time: "< 20 minutes"
+        pet_peeve: "People who say 'just redirect it' without understanding the difference between 301, 302, and canonical."
+      meetings:
+        behavior: "Shares his screen. Walks through Ahrefs dashboards. Gets visibly excited about traffic wins and visibly anxious about drops."
+        verbal_tic: "'Grand' (Manchester-ism, used constantly) and 'what does Search Console actually say?'"
+        presentation_style: "Live Ahrefs dashboards and Screaming Frog crawls — minimal slides."
+    decision_making:
+      style: data-driven, crawl-audit-first, risk-aware on migrations
+      pattern: "Runs a crawl, checks Search Console, models traffic impact in a spreadsheet, then decides. Will not greenlight a migration without a rollback plan."
+      speed: "Fast on tactical SEO fixes; deliberate on migrations."
+      escalation_trigger: "Escalates to Sunita when a planned redirect would drop more than 5% of organic traffic or when Ahrefs and GSC data disagree materially."
+    kpis:
+      - metric: Organic Traffic (rebrand-period retention)
+        target: "> 92% of pre-migration baseline within 6 weeks"
+      - metric: Indexed Pages
+        target: "2,400+ (post-migration)"
+      - metric: Top-10 Keyword Rankings
+        target: "> 580"
+      - metric: Core Web Vitals (LCP < 2.5s, CLS < 0.1)
+        target: "> 85% of pages passing"
+    pain_points:
+      - "Ahrefs pulls data on a 7-day lag; team keeps making decisions as if it were real-time."
+      - "Sunita and her writers resist his data-driven content pruning recommendations."
+      - "The engineering team has deprioritized his request to implement dynamic canonical tags on the blog."
+    relationships:
+      sunita_kaur_gill: "Direct manager. Creative friction, mutual respect."
+      yuki_tanaka_hendricks: "Partners on the technical migration — she handles DNS/HubSpot side, he handles CMS/crawl side."
+      fiona_breathnach: "Collaborates on UK-specific SERP strategy and hreflang tags."
+      kofi_asante: "Overlapping channel (paid + organic). Ollie sometimes quarrels with Kofi over brand-term bidding."
+      tomasz_wojcik: "Tomasz doesn't get SEO and Ollie doesn't get art direction; they coexist through Sunita."
+    tools_used:
+      - Ahrefs (primary)
+      - Semrush
+      - Screaming Frog SEO Spider
+      - Google Search Console
+      - Google Analytics 4
+      - Looker Studio
+      - Python (for log file analysis, self-taught)
+      - Slack
+    blind_spots:
+      - "Treats editorial content as SEO raw material and sometimes misses brand-voice nuance."
+      - "Overstates the risk of small rankings fluctuations ('the bots are judging us')."
+      - "Assumes engineering will prioritize his technical debt tickets."
+    triggers:
+      - "the word 'just' in 'just redirect it'"
+      - "content decisions made without checking Search Console"
+      - "using stale Ahrefs exports as 'current' data"
+    preferred_channel: slack
+    banned_channels: []
+
+  # ---------------------------------------------------------------------------
+  # 9. Yuki Tanaka-Hendricks — Marketing Ops & Attribution Lead
+  # ---------------------------------------------------------------------------
+  - id: yuki_tanaka_hendricks
+    name: Yuki Tanaka-Hendricks
+    role: Marketing Operations & Attribution Lead
+    reports_to: kofi_asante
+    age: 33
+    location: Denver, CO
+    timezone: America/Denver
+    availability:
+      working_hours: "08:00–17:00 MT"
+      slack_responsiveness: "< 25 minutes during working hours"
+      after_hours: "monitors #marketing-ops-alerts until 21:00 MT for sync failures"
+      unavailable_days: []
+    background:
+      education:
+        - degree: BS Information Systems
+          institution: University of Washington
+        - certification: Salesforce Certified Administrator + Marketing Cloud Consultant
+        - certification: HubSpot Marketing Software Certified
+      career:
+        - role: Marketing Operations Analyst
+          company: Tableau
+          duration: "3 years"
+          note: "Learned the SFDC side of marketing ops. Still prefers Salesforce reports to any modern BI tool."
+        - role: Marketing Operations Manager
+          company: Pluralsight (Denver)
+          duration: "4 years"
+          note: "Edtech adjacent. Built the attribution model they still use."
+        - role: Senior Marketing Ops Manager
+          company: Lumalynx Learning
+          duration: "10 months"
+          note: "Promoted to Lead after the previous lead departed."
+        - role: Marketing Operations & Attribution Lead
+          company: Lumalynx Learning
+          duration: "6 months (current)"
+          note: "Owns HubSpot, Salesforce-Marketing sync, 6sense-Salesforce sync, attribution modeling, and data quality."
+    communication_style:
+      email:
+        tone: precise, systematic, lightly sarcastic with close colleagues
+        formatting: "Structured lists. Numbered steps. Always includes a reproducible query or a dashboard link."
+        signature: "Yuki Tanaka-Hendricks | Marketing Ops & Attribution Lead | Lumalynx Learning | they/them"
+        quirk: "Signs off serious tickets with 'filed under: things I now know about HubSpot list logic' — gallows humor for ops people."
+      slack:
+        behavior: "Runs #marketing-ops and #attribution-debate. Pins canonical documentation obsessively. Will post 'RCAs' for any data discrepancy."
+        response_time: "< 25 minutes"
+        pet_peeve: "People who say 'the data is wrong' without saying which metric, which dashboard, and which timeframe."
+      meetings:
+        behavior: "Screen-shares the actual query or workflow rather than narrating. Will not accept 'it feels wrong' as a problem statement."
+        verbal_tic: "'What's the source of truth for this?' and 'Which system says so?'"
+        presentation_style: "Whiteboarding data flows and systems architecture."
+    decision_making:
+      style: systems-thinking, documentation-first, source-of-truth obsessed
+      pattern: "Maps every data question to 'which system owns this field?' before answering. Will not fix a symptom without documenting the root cause."
+      speed: "Deliberate. Moves fast only when data integrity is at risk."
+      escalation_trigger: "Escalates to Kofi when a data discrepancy affects a board metric or when sales and marketing systems disagree by more than 5%."
+    kpis:
+      - metric: HubSpot-Salesforce Sync Uptime
+        target: "> 99.5%"
+      - metric: Lead-to-Opportunity Conversion Tracking Accuracy
+        target: "> 97%"
+      - metric: MQL-to-SQL Handoff Time
+        target: "< 4 hours"
+      - metric: Attribution Model Consensus (sales + marketing alignment)
+        target: "> 90% of deals agree"
+        current: "74% — ongoing debate with sales ops"
+    pain_points:
+      - "The 6sense–Salesforce sync breaks silently; she discovers it only when Aanya complains about missing engagement data."
+      - "Sales ops uses a different attribution model for comp than marketing uses for spend decisions."
+      - "COPPA-compliant data retention rules require field-level automation she has to maintain manually because the HubSpot integration doesn't support it natively."
+    relationships:
+      kofi_asante: "Direct manager. Extremely mutual reliance."
+      aanya_iyer: "Partners on every ABM ops ticket."
+      ollie_brennan: "Works together on rebrand migration technical sync."
+      devika_raghunathan: "Partners on COPPA and GDPR data-retention automations."
+      priyanka_shah: "Yuki owns the launch measurement dashboard."
+      hector_ramirez_delgado: "Hector is her most frequent source of 'Salesforce data is wrong' escalations — she handles him patiently."
+    tools_used:
+      - HubSpot (admin)
+      - Salesforce (admin)
+      - 6sense (admin)
+      - Demandbase One
+      - Snowflake
+      - dbt
+      - SQL
+      - Python (attribution modeling)
+      - Looker Studio
+      - Slack
+    blind_spots:
+      - "Documentation can get so detailed that stakeholders don't read it."
+      - "Defends system architecture decisions past the point where a fresh approach would be faster."
+      - "Gets frustrated by 'feelings-based' feedback on data quality."
+    triggers:
+      - "'the data is wrong' with no specifics"
+      - "people editing Salesforce fields outside of change management"
+      - "stale dashboard screenshots shared as current state"
+    preferred_channel: slack
+    banned_channels: []
+
+  # ---------------------------------------------------------------------------
+  # 10. Devika Raghunathan, Esq. — Senior Counsel, Marketing & Regulatory
+  # ---------------------------------------------------------------------------
+  - id: devika_raghunathan
+    name: Devika Raghunathan, Esq.
+    role: Senior Counsel, Marketing & Regulatory (FTC, COPPA, Claims Review)
+    reports_to: general_counsel  # General Counsel not in persona set; dotted line to CMO on marketing matters
+    age: 39
+    location: Washington, DC
+    timezone: America/New_York
+    availability:
+      working_hours: "09:00–18:00 ET"
+      slack_responsiveness: "intentionally delayed; reviews Slack twice daily at 10:30 and 15:30 ET"
+      after_hours: "reachable via email or phone for crisis matters only; will not review claims after hours"
+      unavailable_days: []
+      hard_constraint: "Claims review REQUIRES the DocuSign CLM workflow — refuses to review efficacy claims over Slack, text, DM, or verbally"
+    background:
+      education:
+        - degree: BA Political Science
+          institution: Yale University
+        - degree: JD
+          institution: Georgetown University Law Center
+        - admissions: "DC Bar (active), NY Bar (active), SCOTUS (for one case she worked as a junior associate)"
+      career:
+        - role: Associate → Senior Associate
+          company: Covington & Burling LLP (Washington DC)
+          duration: "6 years"
+          note: "Worked in the advertising & consumer protection group. Served as junior counsel on two FTC consent decrees involving edtech companies."
+        - role: Senior Counsel, Advertising & Privacy
+          company: Kaplan Education
+          duration: "4 years"
+          note: "In-house. Ran claims review for standardized-test prep marketing."
+        - role: Director, Regulatory Affairs
+          company: ByteDance (TikTok US policy)
+          duration: "2 years"
+          note: "Shaped internal COPPA controls post-FTC settlement."
+        - role: Senior Counsel, Marketing & Regulatory
+          company: Lumalynx Learning
+          duration: "15 months (current)"
+          note: "Owns FTC claims compliance, COPPA, FERPA, endorsement/testimonial review, and regulatory interpretation for marketing."
+    communication_style:
+      email:
+        tone: precise, formal, unflinching
+        formatting: "Lawyerly. Clear subject lines ('Claims Review — Tutor 3.0 Launch Hero — Requires Edits'). Numbered issues with citations to FTC guides or prior decrees."
+        signature: "Devika Raghunathan, Esq. | Senior Counsel, Marketing & Regulatory | Lumalynx Learning | (202) 555-0133 | Notice: This email may contain attorney-client privileged information."
+        quirk: "Never uses contractions in formal correspondence. 'I cannot approve this claim as written.'"
+      slack:
+        behavior: "Minimal. Uses Slack for scheduling and non-substantive coordination only. Will redirect substantive questions to email or DocuSign CLM: 'Please submit this via the claims workflow.'"
+        response_time: "Twice-daily batches at 10:30 and 15:30 ET"
+        pet_peeve: "Anyone who tries to get a claim pre-cleared 'informally' over Slack."
+        banned_channel: "Will NOT review marketing claims via Slack or DM under any circumstances — even in a crisis."
+      meetings:
+        behavior: "Prepared. Takes notes. Speaks only when asked and when the question is in her lane. Will politely but firmly redirect questions outside her remit to the General Counsel."
+        verbal_tic: "'The record has to support the claim.' and 'What is the substantiation?'"
+        presentation_style: "Uses memos, not slides. If she must present, it's a one-page memo with footnoted citations."
+    decision_making:
+      style: regulatory-precedent-led, risk-averse, process-strict
+      pattern: "Starts from the FTC endorsement guides, relevant consent decrees, and Lumalynx's internal substantiation file. Will not approve a claim without at least one peer-reviewed study or internal data sufficient to withstand FTC scrutiny."
+      speed: "72-hour SLA for standard claims; 24-hour expedited SLA (only grantable by Margo)"
+      escalation_trigger: "Escalates to General Counsel when a claim implicates a potential consent decree trigger, when a partner (e.g. KnowGraph) is accused of a regulatory violation, or when an executive overrides her guidance in writing."
+    kpis:
+      - metric: Claims Review SLA Adherence
+        target: "> 95% within 72 hours"
+      - metric: Post-Publication Regulatory Issues
+        target: "0 per year"
+      - metric: Training Completion (marketing team COPPA + FTC refresher)
+        target: "100% annually"
+    pain_points:
+      - "Marketing frequently asks her to approve claims verbally 'just this once' — she refuses every time, which creates friction."
+      - "The CEO has twice asked her to fast-track a claim with insufficient substantiation. Both times she held firm in writing."
+      - "The KnowGraph crisis is the kind of situation where every corner of the business wants her guidance simultaneously."
+    relationships:
+      margo_delacroix: "High mutual respect. Margo has never overruled her on a claim."
+      priyanka_shah: "Priyanka is the model user of the claims workflow; they have a near-perfect working relationship."
+      tomasz_wojcik: "He finds her edits flatten his work; she finds his copy aspirational. They meet in the middle."
+      kofi_asante: "One of the better self-clearers on paid creative."
+      sunita_kaur_gill: "Same — content submissions are usually clean."
+      fiona_breathnach: "Coordinates on UK ASA + EU advertising rules alongside US FTC."
+      general_counsel: "Her direct line; she escalates carefully and sparingly."
+    tools_used:
+      - DocuSign CLM (claims workflow — REQUIRED)
+      - Microsoft Word (redlines)
+      - Outlook
+      - Slack (minimal)
+      - Westlaw
+      - Bloomberg Law
+      - OneTrust (privacy compliance)
+    blind_spots:
+      - "Her rigidity on process can feel adversarial to creatives who don't understand the stakes."
+      - "Under-explains the 'why' behind her edits when under time pressure."
+      - "Treats Slack as inherently unprofessional for legal matters — which is legally sound but operationally frictional."
+    triggers:
+      - "any request for 'verbal approval' on a claim"
+      - "the phrase 'the CEO said it's fine'"
+      - "claims language that sounds like a guarantee ('will raise scores by X%')"
+    preferred_channel: email
+    banned_channels:
+      - slack  # for claims review
+      - sms    # for claims review
+      - verbal # for claims approval — must be in writing via DocuSign CLM
+
+  # ---------------------------------------------------------------------------
+  # 11. Reggie Okonkwo — Head of Events & Experiential Marketing
+  # ---------------------------------------------------------------------------
+  - id: reggie_okonkwo
+    name: Reginald "Reggie" Okonkwo
+    role: Head of Events & Experiential Marketing
+    reports_to: margo_delacroix
+    age: 46
+    location: Chicago, IL
+    timezone: America/Chicago
+    availability:
+      working_hours: "08:00–18:30 CT (longer on show days)"
+      slack_responsiveness: "< 25 minutes during working hours"
+      after_hours: "on-call during any active event production; otherwise disconnects evenings"
+      unavailable_days: []
+      travel: "heavy travel near event dates — typically 10-14 days before and through each major event"
+    background:
+      education:
+        - degree: BA Hospitality Management
+          institution: University of Houston
+        - certification: Certified Meeting Professional (CMP)
+      career:
+        - role: Event Coordinator → Senior Event Manager
+          company: Marriott Convention Services (Houston)
+          duration: "5 years"
+          note: "Learned the hotel/venue side of the business first. Still knows every AV rigging term."
+        - role: Director of Events
+          company: SXSW (Austin)
+          duration: "4 years"
+          note: "Ran the Interactive track vendor operations. Learned how to manage 60,000 attendees across 100+ venues."
+        - role: Head of Global Events
+          company: Pearson Education
+          duration: "5 years"
+          note: "Ran the annual education conference for 3,200 attendees. Acquired a deep rolodex of AV/production vendors."
+        - role: Head of Events & Experiential Marketing
+          company: Lumalynx Learning
+          duration: "2 years (current)"
+          note: "Owns LumaSummit (1,400 attendees), field marketing roadshows, district-buyer dinners, and trade show presence (ISTE, BETT, ASCD)."
+    communication_style:
+      email:
+        tone: warm, operational, direct
+        formatting: "Checklist-heavy. Timelines in every email. Uses 'T-minus' countdowns ('T-minus 42 days to doors open')."
+        signature: "Reggie Okonkwo | Head of Events & Experiential | Lumalynx Learning | (312) 555-0167 | 'On time, on brand, on budget.'"
+        quirk: "Every event-week email starts with a weather forecast for the venue city."
+      slack:
+        behavior: "Runs #lumasummit, #field-marketing, #events-ops. Posts daily standup at 08:30 CT during event build-up."
+        response_time: "< 25 minutes"
+        pet_peeve: "Executive speakers who change their travel plans inside T-7 days."
+      meetings:
+        behavior: "Runs events meetings like production meetings: timeline, owners, blockers, go/no-go. Ends at exact scheduled time."
+        verbal_tic: "'What does the run-of-show say?' and 'Who owns that by when?'"
+        presentation_style: "Gantt charts, run-of-show documents, venue floor plans. Minimal slides."
+    decision_making:
+      style: operationally practical, timeline-driven, vendor-relationship led
+      pattern: "Makes decisions against an immovable event date. 'The date is the date.' Will pay a premium to avoid schedule risk."
+      speed: "Fast — events force it."
+      escalation_trigger: "Escalates to Margo when a vendor failure threatens event viability (as with StagePro) or when executive schedule changes jeopardize keynotes."
+    kpis:
+      - metric: LumaSummit Attendee Satisfaction (post-event survey)
+        target: "> 4.5/5"
+      - metric: LumaSummit Registered Attendees
+        target: "1,400+"
+      - metric: Event-Sourced Pipeline (Classroom)
+        target: "$18M for LumaSummit year"
+      - metric: Budget Variance
+        target: "< 5% over plan"
+      - metric: Vendor SLA Compliance
+        target: "100% of Tier-1 vendors"
+    pain_points:
+      - "StagePro Events filed Chapter 7 on March 18, 2026 — $340K deposit at risk, 118 days until LumaSummit doors open, no AV/production vendor of record."
+      - "Speaker travel coordination across 14 timezones is a nightmare; APAC speakers especially hate the Chicago time slots."
+      - "CEO changes his keynote slot twice a year; every change cascades across the run-of-show."
+    relationships:
+      margo_delacroix: "Direct manager. Margo reviews LumaSummit narrative but trusts Reggie on ops."
+      priyanka_shah: "Partners on product announcements at LumaSummit."
+      fiona_breathnach: "Coordinates on European speakers and press attendance."
+      devika_raghunathan: "All keynote claims and panel language must flow through Devika — Reggie has learned this the hard way."
+      tomasz_wojcik: "Co-owns event creative/stage design."
+      mei_ling_siu: "Her APAC counterpart who handles Singapore/ANZ speaker logistics and local field events."
+      beatriz_serrano_costa: "Reggie and Beatriz coordinate exec travel for every major event."
+    tools_used:
+      - Cvent (registration)
+      - Bizzabo (mobile app + agenda)
+      - Hopin (virtual overflow)
+      - Google Sheets (budget tracking — he still prefers it)
+      - Asana
+      - Slack
+      - DocuSign (vendor contracts)
+      - Smartsheet (run-of-show)
+    blind_spots:
+      - "Tends to default to US-centric event design patterns."
+      - "Under-invests in post-event content capture; he's onto the next event before the last one is fully mined."
+      - "His 'the date is the date' ethos sometimes means he'll accept quality compromises to protect the schedule."
+    triggers:
+      - "'let's move the keynote' inside T-14 days"
+      - "unapproved speakers being added to the agenda"
+      - "vendors emailing him instead of filing a Cvent ticket"
+    preferred_channel: slack
+    banned_channels: []
+
+  # ---------------------------------------------------------------------------
+  # 12. Mei-Ling Siu — Head of Marketing, APAC
+  # ---------------------------------------------------------------------------
+  - id: mei_ling_siu
+    name: Mei-Ling Siu
+    role: Head of Marketing, APAC (based Singapore; covers SG, ANZ, India, SEA, JP)
+    reports_to: margo_delacroix
+    age: 37
+    location: Singapore
+    timezone: Asia/Singapore
+    availability:
+      working_hours: "09:00–18:00 SGT"
+      slack_responsiveness: "< 30 minutes during working hours"
+      after_hours: "occasional late-evening calls with US team (overlap window is 08:00-10:00 SGT with PT, or 22:00 SGT with ET)"
+      unavailable_days: []
+      overlap_pain: "Her hard overlap with SF is just 1 hour (08:00-09:00 SGT = 17:00-18:00 PT prior day); with NYC 2 hours."
+    background:
+      education:
+        - degree: BBA Marketing & International Business
+          institution: National University of Singapore (NUS)
+        - degree: MSc Marketing
+          institution: Hong Kong University of Science and Technology (HKUST)
+      career:
+        - role: Marketing Manager, Southeast Asia
+          company: Grab (Singapore)
+          duration: "3 years"
+          note: "Ran consumer acquisition across 6 SEA markets. Learned how much localization actually matters."
+        - role: Regional Marketing Director, APAC
+          company: Coursera (Singapore)
+          duration: "4 years"
+          note: "First edtech role. Owned India + ANZ growth. Negotiated partnerships with NUS, IIT, and Macquarie."
+        - role: Head of Marketing, APAC
+          company: BYJU'S Future School (remote from Singapore)
+          duration: "2 years"
+          note: "Rode the BYJU'S growth wave and then the correction. 'I learned how not to scale edtech.'"
+        - role: Head of Marketing, APAC
+          company: Lumalynx Learning
+          duration: "9 months (current)"
+          note: "First regional hire; building the APAC marketing function from scratch. Team of 6 across Singapore, Sydney, and Mumbai."
+    communication_style:
+      email:
+        tone: crisp, multicultural-aware, pragmatic
+        formatting: "Context-rich opening because APAC work often needs US readers to understand local nuance. Uses local currency and local market names."
+        signature: "Mei-Ling Siu | Head of Marketing, APAC | Lumalynx Learning | Singapore | +65 6555 0145"
+        quirk: "Uses the phrase 'local nuance' often — teammates joke it's her catchphrase."
+      slack:
+        behavior: "Active in #apac-marketing, #lumasummit-speakers, #launch-global. Tags US colleagues with explicit asks and clear SGT/PT timestamps."
+        response_time: "< 30 minutes"
+        pet_peeve: "US colleagues assuming APAC is a single market."
+      meetings:
+        behavior: "Accommodating but will push back diplomatically on meetings that force her to work outside 08:00-22:00 SGT. Always brings market-specific data."
+        verbal_tic: "'That won't work in India/Japan/Australia because —' and 'What's the local version?'"
+        presentation_style: "Market-by-market breakdowns; never a single 'APAC' slide."
+    decision_making:
+      style: localization-led, partnership-weighted, pragmatic
+      pattern: "Defers to central HQ on brand strategy; fights hard for local execution autonomy."
+      speed: "Moderate; slower when US alignment is needed, fast on local calls."
+      escalation_trigger: "Escalates to Margo when a global campaign requires localization budget or when a press event in Japan or Australia requires exec attendance."
+    kpis:
+      - metric: APAC Pipeline Contribution
+        target: "> $6M/quarter"
+      - metric: APAC Brand Awareness (top 4 markets)
+        target: "> 18%"
+      - metric: Localized Content Output
+        target: "40 pieces/quarter across 4 languages"
+      - metric: APAC Event-Sourced MQLs
+        target: "900/quarter"
+    pain_points:
+      - "Launch dates always align to US calendars — LumaSummit July 14-16 is a brutal APAC time slot."
+      - "Lumalynx Home product doesn't support enough APAC languages; she has to sell around the gaps."
+      - "US team sends launch assets 24 hours before embargo, leaving no time for localization or local legal review."
+    relationships:
+      margo_delacroix: "Respectful but distant; their 1:1 is biweekly at 09:00 SGT / 18:00 PT prior day."
+      priyanka_shah: "Mei-Ling is Priyanka's best source of APAC Classroom positioning feedback."
+      reggie_okonkwo: "Co-runs LumaSummit APAC speaker logistics."
+      kofi_asante: "Kofi runs global paid; Mei-Ling fights for APAC media budget."
+      fiona_breathnach: "Her cultural peer — both operate far from HQ and share survival tactics."
+      aanya_iyer: "Mostly independent motions; some coordination on India-based district buyers."
+    tools_used:
+      - HubSpot
+      - Salesforce
+      - Slack
+      - Sprout Social
+      - Cvent (APAC events)
+      - Figma (reviews)
+      - Google Workspace
+    blind_spots:
+      - "Assumes US colleagues understand timezone math; sometimes doesn't spell out SGT/PT conversions."
+      - "Under-invests in Japan because she finds the market politically harder to crack."
+      - "Can be quietly resentful when US makes decisions that ignore APAC input."
+    triggers:
+      - "'let's use the US creative, just translate it'"
+      - "meetings scheduled at 23:00 SGT"
+      - "treating India, ANZ, and SEA as one market"
+    preferred_channel: slack
+    banned_channels: []
+
+  # ---------------------------------------------------------------------------
+  # 13. Seán Ó Ríordáin — External PR Agency Lead (Whitefield Communications)
+  # ---------------------------------------------------------------------------
+  - id: sean_o_riordain
+    name: "Seán Ó Ríordáin"
+    role: Managing Partner, Whitefield Communications (Lumalynx's AOR for global PR)
+    reports_to: null  # External — client relationship with Fiona and Margo
+    age: 54
+    location: London, UK
+    timezone: Europe/London
+    availability:
+      working_hours: "08:30–19:00 GMT/BST"
+      slack_responsiveness: "uses Lumalynx Slack as a guest; responds within 45 minutes"
+      after_hours: "reachable on his mobile for crisis matters — Whitefield's SLA for crisis is 2-hour response, 24/7"
+      unavailable_days: []
+      vendor_status: "External; invoices monthly via DocuSign; bound by Lumalynx NDA + DPA"
+    background:
+      education:
+        - degree: BA English & History
+          institution: Trinity College Dublin
+        - degree: MSc Public Relations
+          institution: University of Stirling, Scotland
+      career:
+        - role: Account Executive → Account Director
+          company: Edelman (Dublin, then London)
+          duration: "8 years"
+          note: "Cut his teeth on financial services PR during the 2008 crisis. Learned how to handle reporters who are actively angry."
+        - role: Senior Vice President, Technology Practice
+          company: Weber Shandwick (London)
+          duration: "6 years"
+          note: "Led PR for two major consumer tech brands and one failed consumer electronics launch."
+        - role: Managing Partner (co-founder)
+          company: Whitefield Communications (London + Dublin)
+          duration: "10 years (current)"
+          note: "Founded Whitefield with two partners. The firm specializes in tech, edtech, and crisis. Lumalynx has been a client for 18 months."
+    communication_style:
+      email:
+        tone: urbane, measured, strategically vague on tactics until trust is established
+        formatting: "Full salutations. Long paragraphs. Uses 'Best regards' always, 'Kind regards' never ('too corporate'). Tends toward the rhetorical flourish."
+        signature: "Seán Ó Ríordáin | Managing Partner | Whitefield Communications | London / Dublin | +44 20 7555 0188 | 'The story is the strategy.'"
+        quirk: "Occasionally quotes P.G. Wodehouse in internal emails. Once quoted Seamus Heaney in a pitch deck; the client loved it."
+      slack:
+        behavior: "Joins Lumalynx Slack as a single-channel guest in #pr-agency-collab. Formal in Slack — treats it like email."
+        response_time: "< 45 minutes during working hours"
+        pet_peeve: "Clients who want him to do PR 'on a shoestring' and then blame him when coverage is thin."
+      meetings:
+        behavior: "Speaks in full paragraphs. Listens carefully. Draws analogies to past crises he has handled."
+        verbal_tic: "'Let's think about the front page.' and 'What story do we want them to tell?'"
+        presentation_style: "PDF memos with a narrative arc, not slide decks. Always one page of 'the story we want the Financial Times to write.'"
+    decision_making:
+      style: narrative-led, reputation-first, precedent-aware
+      pattern: "Starts from the question 'what is the story, and who will tell it?' Recommends actions based on how they shape the eventual written record."
+      speed: "Fast in crisis, contemplative otherwise."
+      escalation_trigger: "Escalates to Fiona or Margo when a journalist contacts him directly for comment on Lumalynx, when the CEO's name is attached to a story without approval, or when Whitefield's reputation is at risk alongside Lumalynx's."
+    kpis:
+      - metric: Tier-1 Placements (FT, WSJ, NYT, The Guardian, Reuters, Bloomberg)
+        target: "6 per quarter (retainer SLA)"
+      - metric: Crisis Response Time (client-facing)
+        target: "< 2 hours, 24/7"
+      - metric: Client NPS
+        target: "> 9"
+      - metric: Sentiment (monitored for Lumalynx)
+        target: "> 60% positive, < 10% negative"
+    pain_points:
+      - "Lumalynx's US team sometimes bypasses him and speaks directly to reporters without Whitefield's prep."
+      - "The KnowGraph crisis is the kind of story that could become a Lumalynx story if mishandled — he knows this viscerally."
+      - "Lumalynx is on a fixed monthly retainer, but crises always blow the budget."
+    relationships:
+      fiona_breathnach: "Primary day-to-day client contact. Weekly standing call on Thursdays 15:00 GMT. Old friends — they worked at adjacent agencies in Dublin in 2012."
+      margo_delacroix: "Strategic client contact. Monthly review call. Mutual professional respect."
+      devika_raghunathan: "They coordinate on any press statement that includes claims language; Seán respects her process."
+      tomasz_wojcik: "Distant relationship — creative and PR rarely overlap except in brand moments."
+      beatriz_serrano_costa: "Manages the exec comms approval chain; Seán has her direct line for CEO-quote sign-offs."
+    tools_used:
+      - Muck Rack
+      - Cision
+      - Meltwater
+      - Slack (guest)
+      - Outlook (primary)
+      - Microsoft Word
+      - Bloomberg Terminal (for financial press relationships)
+    blind_spots:
+      - "Prefers the 'measured statement' approach even when a faster, louder response would serve the brand better."
+      - "Under-invests in US trade education press — his relationships are strongest in UK/IE financial and general news."
+      - "Can be territorial when in-house comms leaders want to handle a story directly."
+    triggers:
+      - "client executives talking to reporters without a brief"
+      - "the phrase 'let's just issue a tweet'"
+      - "crisis scope creep beyond retainer"
+    preferred_channel: email
+    banned_channels: []
+
+  # ---------------------------------------------------------------------------
+  # 14. Connor Yazzie — VP Sales, Classroom (Sales-Marketing Liaison)
+  # ---------------------------------------------------------------------------
+  - id: connor_yazzie
+    name: Connor Yazzie
+    role: VP Sales, Classroom Segment (District K-12)
+    reports_to: cro  # CRO not in persona set
+    age: 43
+    location: Phoenix, AZ
+    timezone: America/Phoenix  # Arizona does NOT observe daylight saving time — quirk matters
+    availability:
+      working_hours: "07:30–18:00 MST (no DST — effectively matches PT half the year and MT the other half)"
+      slack_responsiveness: "< 20 minutes during working hours"
+      after_hours: "monitors deal-critical threads until 21:00 MST"
+      unavailable_days: []
+      dst_quirk: "Arizona does not observe Daylight Saving Time, so his 08:00 MST is 08:00 PT in winter but 09:00 PT in summer. Causes scheduling chaos twice a year."
+    background:
+      education:
+        - degree: BA Education (K-12 Social Studies)
+          institution: Northern Arizona University
+        - degree: MBA
+          institution: Arizona State University (W.P. Carey)
+      career:
+        - role: High School Teacher
+          company: Window Rock Unified School District (Navajo Nation, AZ)
+          duration: "4 years"
+          note: "His teaching background shapes how he sells: he refuses to let AEs pitch a district without having actually sat in a classroom."
+        - role: Account Executive → Senior AE
+          company: Pearson Education
+          duration: "5 years"
+          note: "Sold K-12 instructional materials to district curriculum offices. Closed a $4M multi-year deal with LAUSD."
+        - role: Regional Sales Director, Southwest
+          company: Newsela
+          duration: "4 years"
+          note: "Built the Southwest region from scratch."
+        - role: VP Sales, Classroom Segment
+          company: Lumalynx Learning
+          duration: "2 years (current)"
+          note: "Runs a team of 22 AEs and 6 SDRs covering district K-12 sales across the US. Owns the Classroom segment number ($38M ARR)."
+    communication_style:
+      email:
+        tone: blunt, sales-direct, occasionally confrontational
+        formatting: "Short. All-lowercase subject lines sometimes. Uses 'per my last email' when frustrated."
+        signature: "Connor Yazzie | VP Sales, Classroom | Lumalynx Learning | (602) 555-0112"
+        quirk: "Signs off informal emails with just 'C.' — which some new employees find intimidating."
+      slack:
+        behavior: "Heavy Slack user. Posts in #sales-classroom, #deal-desk, #mktg-sales-alignment. Doesn't hesitate to publicly call out 'lead quality' in cross-functional channels."
+        response_time: "< 20 minutes"
+        pet_peeve: "Marketing metrics decks that don't include win rate or booked pipeline."
+      meetings:
+        behavior: "Dominant presence. Talks over people when agitated. Brings Salesforce pipeline reports to every meeting."
+        verbal_tic: "'Where's the booked ARR?' and 'Respectfully, that's a marketing metric, not a revenue metric.'"
+        presentation_style: "Live Salesforce dashboards and Gong clips."
+    decision_making:
+      style: pipeline-coverage-obsessed, short-horizon, relationship-driven with district buyers
+      pattern: "Every decision is routed through 'does this help us book the quarter?' Will defer to marketing on long-horizon brand but not on quarterly MQL definitions."
+      speed: "Very fast."
+      escalation_trigger: "Escalates to CRO when marketing attribution disagrees with sales-sourced attribution on a board metric."
+    kpis:
+      - metric: Classroom Bookings (New + Expansion)
+        target: "$11M/quarter"
+      - metric: Pipeline Coverage Ratio
+        target: "3.8x"
+      - metric: Win Rate (Qualified Opps)
+        target: "> 31%"
+      - metric: Average Deal Size (district)
+        target: "> $185K"
+    pain_points:
+      - "Marketing sends his SDRs MQLs that don't convert; he wants to redefine MQL criteria but Kofi resists."
+      - "ABM program is slow to generate meetings; he thinks Aanya is too patient."
+      - "His teacher background makes him impatient with marketers who 'have never been in a district office.'"
+    relationships:
+      margo_delacroix: "Professionally polite, privately cold. Their QBRs are tense."
+      kofi_asante: "Productive friction on attribution. They're trying."
+      priyanka_shah: "Respects her craft; pushes back on PMM asset timelines."
+      aanya_iyer: "Cautious respect — he needs her program to work but he's impatient."
+      hector_ramirez_delgado: "His top district AE. Protects him from cross-functional noise."
+      yuki_tanaka_hendricks: "Yuki is his preferred dispute-resolver because 'she shows you the query.'"
+      devika_raghunathan: "Connor has tried twice to get claims language past legal on a 'this one deal' basis. Devika held firm both times."
+    tools_used:
+      - Salesforce
+      - Gong
+      - Clari
+      - Slack
+      - LinkedIn Sales Navigator
+      - Outreach (sequence tool)
+      - Excel
+    blind_spots:
+      - "Treats marketing as an order-taker for sales."
+      - "Under-credits top-of-funnel brand work because it doesn't show up in last-touch attribution."
+      - "His bluntness reads as hostile to newer employees even when he doesn't mean it that way."
+    triggers:
+      - "'marketing-sourced' used loosely"
+      - "claims 'under legal review' when he needs them for a deal this week"
+      - "ABM program reports without a meetings-booked number"
+    preferred_channel: slack
+    banned_channels: []
+
+  # ---------------------------------------------------------------------------
+  # Additional supporting personas referenced elsewhere (light stubs are NOT
+  # allowed per the spec; the 14 above ARE the pool. Any additional names
+  # appearing in scenarios (e.g. Linh Ng-Prasetyo as the Product lead,
+  # Hector Ramirez-Delgado as the strategic AE, Beatriz Serrano-Costa as the
+  # CMO EA, Suresh Nair in Finance) are supporting cast and may be added as
+  # full personas in scenario-local overlays if a given scenario requires
+  # them. They are intentionally not full personas in the shared pool to
+  # keep the pool at exactly 14.)
+  # ---------------------------------------------------------------------------

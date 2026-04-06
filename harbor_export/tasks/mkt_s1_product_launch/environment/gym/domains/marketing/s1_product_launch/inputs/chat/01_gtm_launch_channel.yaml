@@ -1,0 +1,33 @@
+channel: "#gtm-launch"
+platform: slack
+participants: [priyanka_shah, kofi_asante, tomasz_wojcik, fiona_breathnach, margo_delacroix]
+messages:
+  - from: priyanka_shah
+    timestamp: 2026-04-27T08:52:00-07:00
+    text: "Team — posting here so we have a public trail. Tutor 3.0 is slipping to May 12. I am standing up a 7-day re-sequence sprint starting now. My CoS (the agent) will quarterback. Every claim touching external surfaces goes through Devika's CLM workflow — no shortcuts this week of all weeks."
+    thread_id: null
+
+  - from: kofi_asante
+    timestamp: 2026-04-27T11:03:00-05:00
+    text: "Ack. I have three demand gen waves queued against April 28. I will hold them off the wire until I have the v2 calendar. Please loop me in on Slack (DM) when you have dates."
+    thread_id: null
+
+  - from: tomasz_wojcik
+    timestamp: 2026-04-27T17:14:00+02:00
+    text: "Got it. I will block Wednesday for the brand voice pass on the press release and landing page. One request: do NOT let marketing ops ship copy straight to legal without running it past me first — we had that issue on the last launch."
+    thread_id: null
+
+  - from: fiona_breathnach
+    timestamp: 2026-04-27T17:42:00+01:00
+    text: "Noted. For the EMEA version I will need the copy in my inbox by Thursday 09:00 IST latest, with a deadline of Thursday 16:00 IST for my sign-off. Anything past 17:00 IST will not happen this week. The ASA rules differ from the FTC — flagging early so we do not do a transatlantic find-and-replace."
+    thread_id: null
+
+  - from: margo_delacroix
+    timestamp: 2026-04-27T10:11:00-07:00
+    text: "Confirming I am available Thursday or Friday for the final review. My Tuesday 13-17 PT block is non-movable this week — board prep. 30 minutes max on the review, bring me the one sentence."
+    thread_id: null
+
+  - from: priyanka_shah
+    timestamp: 2026-04-27T10:14:00-07:00
+    text: "Understood on Tuesday 13-17 PT Margo. Team, please treat that window as hard-blocked — no Slack, no email, no calendar invites touching her."
+    thread_id: null
