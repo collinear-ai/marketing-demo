@@ -842,10 +842,10 @@ function showTask(taskId) {
       <td>
         <div class="score-bar">
           <span class="bar-track"><span class="bar-fill ${scoreClass(pct)}" style="width:${pct}%"></span></span>
-          <span class="pct">${v.passed || 0}/${v.total_checks || 0}</span>
+          <span class="pct">${pct}%</span>
         </div>
       </td>
-      <td><span class="tag ${pct >= PASS_THRESHOLD ? 'tag-pass' : 'tag-fail'}">${fm.stopped_reason || 'unknown'}</span></td>
+      <td><span class="tag ${pct >= 70 ? 'tag-pass' : 'tag-fail'}">${pct >= 70 ? 'pass' : 'fail'}</span></td>
     `;
     row.onclick = () => showTrajectory(taskId, tr.fname);
     tbody.appendChild(row);
