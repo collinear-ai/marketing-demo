@@ -791,7 +791,7 @@ function showTask(taskId) {
   document.getElementById('task-header').innerHTML = `
     <h2>${taskId.replace(/_/g, ' ')}</h2>
     <div class="desc">${escapeHtml(task.agent_role)} &mdash; ${task.dag_tasks} DAG tasks, ${task.programmatic_checks} checks, ${Array.isArray(task.personas) ? task.personas.length : task.personas} personas</div>
-    ${task.description ? '<div style="margin-top:8px;font-size:13px;color:var(--text);line-height:1.6;max-width:800px">' + escapeHtml(task.description).replace(/\\n/g, '<br>') + '</div>' : ''}
+    ${task.description ? '<div style="margin-top:8px;font-size:13px;color:var(--text);line-height:1.6">' + renderSimpleMarkdown(task.description) + '</div>' : ''}
   `;
 
   // Get trajectories for this task

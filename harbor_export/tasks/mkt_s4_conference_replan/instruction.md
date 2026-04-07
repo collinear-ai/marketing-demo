@@ -1,7 +1,7 @@
 # mkt_s4_conference_replan
 
 **Domain**: marketing
-**Agent role**: Chief of Staff to Events Director Reggie Okonkwo
+**Agent role**: Marketing Agent to Events Director Reggie Okonkwo
 **Simulated start**: 2026-04-06T09:00:00-04:00 (America/New_York)
 **DAG tasks**: 10
 **Programmatic checks**: 50
@@ -15,7 +15,7 @@ Series C K-12 edtech. $94M ARR, 640 employees. SF HQ, Dublin EMEA, Singapore APA
 ## Brief
 ### mkt_s4_conference_replan — Annual user conference replan after vendor cancellation
 
-**Agent role:** Chief of Staff to Events Director Reggie Okonkwo.
+**Agent role:** Marketing Agent to Events Director Reggie Okonkwo.
 **Duration:** 1 week. **Tasks:** 10. **Dominant trap:** timezone_scheduling_trap. **Regulatory:** none.
 **Premise:** LumaSummit is July 14-16 in Chicago. 1,200 attendees confirmed. On March 18, AV vendor StagePro files bankruptcy. Reggie has 118 days to find a replacement, re-contract, re-brief, and not miss the event. In parallel, a keynote speaker (a high-profile district superintendent) has a scheduling conflict that surfaces during the sprint week — she can no longer do the Tuesday 9:00 AM CT slot but can do Wednesday 11:00 AM CT. The agent must rebuild the keynote roster and communicate with 6 external speakers across US, UK, India, and Singapore timezones. Mei-Ling Siu (Singapore APAC lead) is flying in for the APAC track; her travel was booked around the old speaker roster. Sean O'Riordain's agency runs speaker comms. Margo's Tuesday 13:00-17:00 PT board-prep block falls inside the sprint week and the agent must not schedule anything touching Margo in that window.
 **Key tensions:** 118 days is tight for AV re-procurement (Reggie wants it done in 10 days, Procurement-equivalent will balk); the keynote reshuffle cascades into session grid; multi-timezone speaker comms with hard working-hour boundaries.

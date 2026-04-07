@@ -4,7 +4,7 @@
 
 **Objective:** Re-sequence the entire GTM program for Lumalynx Tutor 3.0 from an original April 28 launch date to a new May 12 launch date after Engineering slipped the code-complete milestone. Every downstream artifact (landing page, press release, demand gen, sales enablement, SDR scripts, EMEA press) must be updated, legally cleared, and shipped inside a 7 calendar-day sprint without losing the Q2 board commitment and without publishing a single unsubstantiated FTC-sensitive claim.
 
-**Agent Role:** Chief of Staff to **Priyanka Shah** (VP Product Marketing). The agent has access to Slack, Gmail, Google Docs, Notion, Figma, DocuSign CLM, HubSpot, Asana, Google Calendar, and the internal Substantiation Library. All outbound FTC-sensitive claims must flow through DocuSign CLM into Devika Raghunathan's review queue — not Slack, not DM, not verbal.
+**Agent Role:** Marketing Agent to **Priyanka Shah** (VP Product Marketing). The agent has access to Slack, Gmail, Google Docs, Notion, Figma, DocuSign CLM, HubSpot, Asana, Google Calendar, and the internal Substantiation Library. All outbound FTC-sensitive claims must flow through DocuSign CLM into Devika Raghunathan's review queue — not Slack, not DM, not verbal.
 
 **Timeline:** 7 calendar days. Sprint begins Monday 2026-04-27 09:00 PT. Launch is Tuesday 2026-05-12 06:00 PT (press release on wire, landing page live, embargo lifted).
 

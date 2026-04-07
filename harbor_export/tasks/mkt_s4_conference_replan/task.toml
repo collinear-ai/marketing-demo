@@ -3,7 +3,7 @@ source = "collinear-ai/long-horizon-gym"
 
 [task]
 name = "collinear-ai/mkt_s4_conference_replan"
-description = "### mkt_s4_conference_replan — Annual user conference replan after vendor cancellation  **Agent role:** Chief of Staff to Events Director Reggie Okonkwo. **Duration:** 1 week. **Tasks:** 10. **Dominan"
+description = "### mkt_s4_conference_replan — Annual user conference replan after vendor cancellation\n**Agent role:** Marketing Agent to Events Director Reggie Okonkwo. **Duration:** 1 week. **Tasks:** 10. **Dominant trap:** calendar_boundary_conflict + vendor_conflict_of_interest. **Regulatory:** contract law (DocuSign CLM for vendor agreements).\n\n**Premise:** StagePro Events (primary AV/production vendor for LumaSummit 2026, 1,400 attendees, Chicago, July 14-16) filed for Chapter 7 bankruptcy. The $340K deposit is at risk. The agent must execute a two-front recovery: replace the bankrupt vendor via formal procurement (three sealed bids, scored evaluation, DocuSign contract) and absorb a late keynote conflict requiring speaker roster rebuild — all while respecting Margo's immovable Tuesday board-prep block.\n\n**Key tensions:** Budget recovery vs. quality preservation; vendor selection politics (one candidate works with Khan Academy competitor); sponsor communication sensitivity (KnowGraph crisis concurrent); APAC/EMEA attendee logistics across timezones."
 keywords = ["marketing", "long-horizon", "multi-persona", "enterprise", "agent-eval"]
 
 [metadata]
@@ -12,7 +12,7 @@ dag_tasks = 10
 programmatic_checks = 50
 personas = 14
 input_files = 17
-agent_role = "Chief of Staff to Events Director Reggie Okonkwo"
+agent_role = "Marketing Agent to Events Director Reggie Okonkwo"
 anchor_tz = "America/New_York"
 kickoff_time = "2026-04-06T09:00:00-04:00"
 

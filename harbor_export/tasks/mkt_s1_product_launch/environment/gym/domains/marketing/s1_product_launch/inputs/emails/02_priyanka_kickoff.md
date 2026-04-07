@@ -13,7 +13,7 @@ Context / Ask / Risks —
 
 **Context:** Linh just confirmed Tutor 3.0 is slipping from April 28 to May 12, 2026. Three features are in scope for launch; the cross-subject knowledge graph is being held back until we have peer-reviewed substantiation (she does not expect it in time). The Q2 board commitment is still reachable on May 12 but only if we execute a clean 7-day re-sequence sprint starting today.
 
-**Ask:** Please run the launch re-sequence as my Chief of Staff this week. Concretely I need you to:
+**Ask:** Please run the launch re-sequence as my Marketing Agent this week. Concretely I need you to:
 
 1. Confirm the slip in writing back to me (Slack DM is fine — you know where I live) and lock the new May 12 date in a Notion doc named `GTM-2026-05-12-Lock`.
 2. Draft a revised GTM calendar (`gtm_calendar_v2`) with milestones dated against May 12, not a naive 14-day shift. Share it with me, Kofi (demand gen), and Fiona (EMEA).

@@ -38,7 +38,7 @@ class Scenario:
     verifier_cls: type[ScenarioVerifier]
     kickoff_time: datetime
     anchor_tz: str
-    agent_role: str                        # "Chief of Staff to Ayo Okafor"
+    agent_role: str                        # "Marketing Agent to Ayo Okafor"
     principal_id: str | None               # persona id of the agent's boss if resolvable
     briefing_text: str                     # raw brief section for this scenario from SCENARIO_BRIEFS.md
     company_context: str                   # domain header from SCENARIO_BRIEFS.md
@@ -247,15 +247,15 @@ def _extract_brief(scenario_id: str, domain: str) -> tuple[str, str]:
 
 
 def _infer_principal(briefing: str, personas: PersonaPool) -> tuple[str, str | None]:
-    """Extract 'Chief of Staff to <persona>' from the brief."""
+    """Extract 'Marketing Agent to <persona>' from the brief."""
     m = re.search(
-        r"\*\*Agent role:\*\*\s*(?:Chief of Staff|Chief of staff)\s+to\s+([^.\n]+?)\.",
+        r"\*\*Agent role:\*\*\s*(?:Marketing Agent|Chief of staff)\s+to\s+([^.\n]+?)\.",
         briefing,
     )
     if not m:
-        return ("Chief of Staff", None)
+        return ("Marketing Agent", None)
     blurb = m.group(1).strip()
-    agent_role = f"Chief of Staff to {blurb}"
+    agent_role = f"Marketing Agent to {blurb}"
 
     # Try to match the blurb to a persona id by name substring.
     for pid in personas.ids():

@@ -173,6 +173,9 @@ def load_tasks():
                 key, val = line.split("=", 1)
                 key = key.strip()
                 val = val.strip().strip('"')
+                # Unescape \n in TOML string values
+                if isinstance(val, str):
+                    val = val.replace('\\n', '\n')
                 try:
                     val = int(val)
                 except ValueError:
