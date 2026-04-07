@@ -706,18 +706,19 @@ function renderOverview() {
   // Global summary
   const totalTrajs = Object.keys(trajs).length;
   const totalTasks = Object.keys(tasks).length;
-  let totalChecks = 0, totalPassed = 0, totalSteps = 0;
+  let totalChecks = 0, totalPassed = 0, totalToolCalls = 0;
   for (const t of Object.values(trajs)) {
     const v = t.final_metrics?.verifier;
     if (v) { totalChecks += v.total_checks; totalPassed += v.passed; }
-    totalSteps += t.final_metrics?.total_steps || 0;
+    totalToolCalls += t.final_metrics?.total_tool_calls || 0;
   }
   const avgScore = totalChecks > 0 ? Math.round(totalPassed / totalChecks * 100) : 0;
+  const avgToolCalls = totalTrajs > 0 ? Math.round(totalToolCalls / totalTrajs) : 0;
 
   document.getElementById('global-summary').innerHTML = `
     <div class="summary-card"><div class="big">${totalTasks}</div><div class="label">Scenarios</div></div>
     <div class="summary-card"><div class="big">${totalTrajs}</div><div class="label">Trajectories</div></div>
-    <div class="summary-card"><div class="big">${totalSteps}</div><div class="label">Total Steps</div></div>
+    <div class="summary-card"><div class="big">${avgToolCalls}</div><div class="label">Avg Tool Calls</div></div>
     <div class="summary-card"><div class="big" style="color:${avgScore>=PASS_THRESHOLD?'var(--green)':'var(--red)'}">${avgScore}%</div><div class="label">Avg Check Pass Rate</div></div>
   `;
 
